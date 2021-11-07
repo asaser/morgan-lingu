@@ -38,7 +38,7 @@ export default function PresentationPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="MorganLingu"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -56,7 +56,7 @@ export default function PresentationPage() {
             <GridItem>
               <div className={classes.brand}>
                 <h1>
-                  Material Kit React
+                  MorganLingu Building Page
                   <span className={classes.proBadge}>PRO</span>
                 </h1>
                 <h3 className={classes.title}>
@@ -88,7 +88,7 @@ export default function PresentationPage() {
                 target="_blank"
                 className={classes.footerBrand}
               >
-                Material Kit PRO React
+                MorganLingu
               </a>
             </div>
             <div className={classes.pullCenter}>

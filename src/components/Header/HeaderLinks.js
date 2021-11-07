@@ -253,7 +253,7 @@ export default function HeaderLinks(props) {
           className={classes.navButton}
           round
         >
-          <ShoppingCart className={classes.icons} /> buy now
+          <ShoppingCart className={classes.icons} /> check our courses
         </Button>
       </ListItem>
     </List>

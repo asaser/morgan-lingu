@@ -49,7 +49,7 @@ export default function SectionFooter() {
                   target="_blank"
                   className={classes.footerBrand}
                 >
-                  Material Kit PRO React
+                  MorganLingu
                 </a>
               </div>
               <div className={classes.pullCenter}>
@@ -202,7 +202,7 @@ export default function SectionFooter() {
                   target="_blank"
                   className={classes.footerBrand}
                 >
-                  Material Kit PRO React
+                  MorganLingu
                 </a>
               </div>
               <div className={classes.pullCenter}>

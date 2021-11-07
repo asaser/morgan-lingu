@@ -100,11 +100,11 @@ const CustomSkinMap = () => {
       position: myLatlng,
       map: map,
       animation: google.maps.Animation.DROP,
-      title: "Material Kit PRO React!",
+      title: "MorganLingu!",
     });
 
     const contentString =
-      '<div class="info-window-content"><h2>Material Kit PRO React</h2>' +
+      '<div class="info-window-content"><h2>MorganLingu</h2>' +
       "<p>A premium Kit for React, Material-UI, and React Hooks.</p></div>";
 
     const infowindow = new google.maps.InfoWindow({
@@ -136,7 +136,7 @@ export default function ContactUsPage() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="MorganLingu"
         links={<HeaderLinks dropdownHoverColor="dark" />}
         fixed
         color="dark"

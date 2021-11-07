@@ -102,7 +102,7 @@ export default function Components() {
   return (
     <div>
       <Header
-        brand="Material Kit PRO React"
+        brand="MorganLingu"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         color="transparent"
