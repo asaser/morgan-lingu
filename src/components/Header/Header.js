@@ -20,6 +20,50 @@ import styles from "assets/jss/material-kit-pro-react/components/headerStyle.js"
 
 const useStyles = makeStyles(styles);
 
+
+Header.defaultProp = {
+  color: "white",
+};
+
+Header.propTypes = {
+  color: PropTypes.oneOf([
+    // "primary",
+    // "info",
+    // "success",
+    // "warning",
+    // "danger",
+    // "transparent",
+    // "white",
+    // "rose",
+    "dark",
+  ]),
+  links: PropTypes.node,
+  brand: PropTypes.string,
+  fixed: PropTypes.bool,
+  absolute: PropTypes.bool,
+  // this will cause the sidebar to change the color from
+  // props.color (see above) to changeColorOnScroll.color
+  // when the window.pageYOffset is heigher or equal to
+  // changeColorOnScroll.height and then when it is smaller than
+  // changeColorOnScroll.height change it back to
+  // props.color (see above)
+  changeColorOnScroll: PropTypes.shape({
+    height: PropTypes.number.isRequired,
+    color: PropTypes.oneOf([
+      // "primary",
+      // "info",
+      // "success",
+      // "warning",
+      // "danger",
+      // "transparent",
+      // "white",
+      // "rose",
+      "dark",
+    ]).isRequired,
+  }),
+};
+
+
 export default function Header(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const classes = useStyles();
@@ -106,45 +150,3 @@ export default function Header(props) {
     </AppBar>
   );
 }
-
-Header.defaultProp = {
-  color: "white",
-};
-
-Header.propTypes = {
-  color: PropTypes.oneOf([
-    "primary",
-    "info",
-    "success",
-    "warning",
-    "danger",
-    "transparent",
-    "white",
-    "rose",
-    "dark",
-  ]),
-  links: PropTypes.node,
-  brand: PropTypes.string,
-  fixed: PropTypes.bool,
-  absolute: PropTypes.bool,
-  // this will cause the sidebar to change the color from
-  // props.color (see above) to changeColorOnScroll.color
-  // when the window.pageYOffset is heigher or equal to
-  // changeColorOnScroll.height and then when it is smaller than
-  // changeColorOnScroll.height change it back to
-  // props.color (see above)
-  changeColorOnScroll: PropTypes.shape({
-    height: PropTypes.number.isRequired,
-    color: PropTypes.oneOf([
-      "primary",
-      "info",
-      "success",
-      "warning",
-      "danger",
-      "transparent",
-      "white",
-      "rose",
-      "dark",
-    ]).isRequired,
-  }),
-};

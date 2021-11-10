@@ -34,6 +34,12 @@ const App = () => {
             <Switch>
 
                 <Route path="/language-page" component={LanguagePage} />
+                {/* <Route path="/language-page" component={LanguagePage} />
+                <Route path="/language-page" component={LanguagePage} />
+                <Route path="/language-page" component={LanguagePage} />
+                <Route path="/language-page" component={LanguagePage} />
+                <Route path="/language-page" component={LanguagePage} />
+                <Route path="/language-page" component={LanguagePage} /> */}
 
 
                 <Route path="/about-us" component={AboutUsPage} />

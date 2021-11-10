@@ -3,7 +3,7 @@ import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -90,7 +90,13 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list + " " + classes.mlAuto}>
+      
+      <Link to="/language-page">
+        <AccountBalance className={classes.dropdownIcons} /> Language Page
+      </Link>
+
       <ListItem className={classes.listItem}>
+
         <CustomDropdown
           noLiPadding
           navDropdown
@@ -203,6 +209,7 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={ViewCarousel}
           dropdownList={[
+
             <Link to="/about-us" className={classes.dropdownLink}>
               <AccountBalance className={classes.dropdownIcons} /> About Us
             </Link>,
