@@ -23,12 +23,19 @@ import ShoppingCartPage from "views/ShoppingCartPage/ShoppingCartPage.js";
 import SignupPage from "views/SignupPage/SignupPage.js";
 import ErrorPage from "views/ErrorPage/ErrorPage.js";
 
+
+import LanguagePage from "./pages/LanguagePage/languagePage";
+
 var hist = createBrowserHistory();
 
 const App = () => {
     return (
         <Router history={hist}>
             <Switch>
+
+                <Route path="/language-page" component={LanguagePage} />
+
+
                 <Route path="/about-us" component={AboutUsPage} />
                 <Route path="/blog-post" component={BlogPostPage} />
                 <Route path="/blog-posts" component={BlogPostsPage} />
