@@ -90,10 +90,52 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list + " " + classes.mlAuto}>
-      
-      <Link to="/language-page">
-        <AccountBalance className={classes.dropdownIcons} /> Language Page
+
+      <Link style={{color: "white", paddingLeft: "25px"}} to="/">
+        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+        Home
       </Link>
+      
+      <Link style={{color: "white", paddingLeft: "25px"}} to="/language-page">
+        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+        Language 
+      </Link>
+
+      <Link style={{color: "white", paddingLeft: "25px"}} to="/how-learn-page">
+        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+        How Learn
+      </Link>
+
+      <Link style={{color: "white", paddingLeft: "25px"}} to="/about-page">
+        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+        About Us
+      </Link>
+      
+      <Link style={{color: "white", paddingLeft: "25px"}} to="/language-test-page">
+        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+        Language Test
+      </Link>
+
+      <Link style={{color: "white", paddingLeft: "25px"}} to="/prices-page">
+        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+        Prices
+      </Link>
+      
+      <Link style={{color: "white", paddingLeft: "25px"}} to="/job-offer-page">
+        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+        Job Offert
+      </Link>
+
+      <Link style={{color: "white", paddingLeft: "25px"}} to="/contact-page">
+        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+        Contact
+      </Link>
+      
+
+
+
+
+      
 
       <ListItem className={classes.listItem}>
 

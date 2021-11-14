@@ -1,3 +1,12 @@
+    // import React from 'react';
+
+    // const ContactPage = () => {
+    //     return (
+    //         <h1>ContactPage</h1>
+    //     )
+    // }
+
+    // export default ContactPage;
 /*eslint-disable*/
 import React from "react";
 // nodejs library that concatenates classes
@@ -127,7 +136,7 @@ const CustomSkinMap = () => {
 
 const useStyles = makeStyles(contactUsStyle);
 
-export default function ContactUsPage() {
+function ContactPage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -294,3 +303,5 @@ export default function ContactUsPage() {
     </div>
   );
 }
+
+export default ContactPage;

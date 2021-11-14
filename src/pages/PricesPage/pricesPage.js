@@ -1,12 +1,13 @@
 // import React from 'react';
 
-// const LanguagePage = () => {
+// const PricesPage = () => {
 //     return (
-//         <h1>Language Page</h1>
+//         <h1>PricesPage</h1>
 //     )
 // }
 
-// export default LanguagePage;
+// export default PricesPage;
+
 
 
 /*eslint-disable*/
@@ -37,7 +38,7 @@ import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.j
 
 const useStyles = makeStyles(aboutUsStyle);
 
-function LanguagePage() {
+function PricesPage() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -71,7 +72,7 @@ function LanguagePage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>Language Page</h1>
+              <h1 className={classes.title}>PricesPage Page</h1>
               <h4>
                 Meet the amazing team behind this project and find out more
                 about how we work.
@@ -150,4 +151,4 @@ function LanguagePage() {
   );
 }
 
-export default LanguagePage;
+export default PricesPage;
