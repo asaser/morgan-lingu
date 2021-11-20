@@ -56,11 +56,11 @@ export default function PresentationPage() {
             <GridItem>
               <div className={classes.brand}>
                 <h1>
-                  MorganLingu Building Page
-                  <span className={classes.proBadge}>PRO</span>
+                  MorganLingu
+                  <span className={classes.proBadge}>PL</span>
                 </h1>
                 <h3 className={classes.title}>
-                  A Badass Material-UI Kit based on Material Design.
+                  Language School
                 </h3>
               </div>
             </GridItem>

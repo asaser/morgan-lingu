@@ -91,51 +91,114 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list + " " + classes.mlAuto}>
 
-      <Link style={{color: "white", paddingLeft: "25px"}} to="/">
-        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+      
+    <ListItem className={classes.listItem}>
+      <Link style={{color: "red", paddingLeft: "25px"}} to="/">
+        <AccountBalance className={classes.dropdownIcons} /> 
         Home
       </Link>
-      
-      <Link style={{color: "white", paddingLeft: "25px"}} to="/language-page">
-        {/* <AccountBalance className={classes.dropdownIcons} />  */}
-        Language 
-      </Link>
+    </ListItem>
 
-      <Link style={{color: "white", paddingLeft: "25px"}} to="/how-learn-page">
-        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+  <ListItem className={classes.listItem}>
+
+  <CustomDropdown
+    noLiPadding
+    navDropdown
+    hoverColor={dropdownHoverColor}
+    buttonText="Languages"
+    buttonProps={{
+      className: classes.navLink,
+      color: "transparent",
+    }}
+    buttonIcon={Apps}
+    dropdownList={[
+      <Link to="/english" className={classes.dropdownLink}>
+        <LineStyle className={classes.dropdownIcons} /> 
+        English
+      </Link>,
+
+      <Link to="/german" className={classes.dropdownLink}>
+        <Layers className={classes.dropdownIcons} />
+        German
+      </Link>,
+
+
+      <Link to="/norwegian" className={classes.dropdownLink}>
+        <Layers className={classes.dropdownIcons} />
+        Norwegian
+      </Link>,
+
+
+      <Link to="/danish" className={classes.dropdownLink}>
+        <Layers className={classes.dropdownIcons} />
+        Danish
+      </Link>,
+
+
+      <Link to="/swedish" className={classes.dropdownLink}>
+        <Layers className={classes.dropdownIcons} />
+        Swedish
+      </Link>,
+
+
+      <Link to="/spanish" className={classes.dropdownLink}>
+        <Layers className={classes.dropdownIcons} />
+        Spanish
+      </Link>,
+
+
+      <Link to="/italian" className={classes.dropdownLink}>
+        <Layers className={classes.dropdownIcons} />
+        Italian
+      </Link>,
+
+
+    ]}
+  />
+  </ListItem>
+
+  <ListItem className={classes.listItem}>
+      <Link style={{color: "red", paddingLeft: "25px"}} to="/how-learn-page">
+        <AccountBalance className={classes.dropdownIcons} /> 
         How Learn
       </Link>
+  </ListItem>
 
-      <Link style={{color: "white", paddingLeft: "25px"}} to="/about-page">
-        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+
+  <ListItem className={classes.listItem}>
+      <Link style={{color: "red", paddingLeft: "25px"}} to="/about-page">
+        <AccountBalance className={classes.dropdownIcons} /> 
         About Us
       </Link>
-      
-      <Link style={{color: "white", paddingLeft: "25px"}} to="/language-test-page">
-        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+  </ListItem>
+
+    <ListItem className={classes.listItem}>
+      <Link style={{color: "red", paddingLeft: "25px"}} to="/language-test-page">
+        <AccountBalance className={classes.dropdownIcons} /> 
         Language Test
       </Link>
+  </ListItem>
 
-      <Link style={{color: "white", paddingLeft: "25px"}} to="/prices-page">
-        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+    <ListItem className={classes.listItem}>
+      <Link style={{color: "red", paddingLeft: "25px"}} to="/prices-page">
+        <AccountBalance className={classes.dropdownIcons} /> 
         Prices
       </Link>
-      
-      <Link style={{color: "white", paddingLeft: "25px"}} to="/job-offer-page">
-        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+    </ListItem>
+
+    <ListItem className={classes.listItem}>
+      <Link style={{color: "red", paddingLeft: "25px"}} to="/job-offer-page">
+        <AccountBalance className={classes.dropdownIcons} /> 
         Job Offert
       </Link>
+    </ListItem>
 
-      <Link style={{color: "white", paddingLeft: "25px"}} to="/contact-page">
-        {/* <AccountBalance className={classes.dropdownIcons} />  */}
+    <ListItem className={classes.listItem}>
+      <Link style={{color: "red", paddingLeft: "25px"}} to="/contact-page">
+        <AccountBalance className={classes.dropdownIcons} /> 
         Contact
       </Link>
-      
-
-
-
-
-      
+    </ListItem>
 
       <ListItem className={classes.listItem}>
 
