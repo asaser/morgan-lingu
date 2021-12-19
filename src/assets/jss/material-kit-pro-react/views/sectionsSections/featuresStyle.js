@@ -84,6 +84,55 @@ const features = {
       },
     },
   },
+
+
+
+  featuresHowLearn: {
+    position: "relative",
+    margin: "0",
+    "& $title": {
+      marginBottom: "30px",
+    },
+    "& $title,& $container": {
+      position: "relative",
+      zIndex: "2",
+      color: "#000",
+    },
+    "&:after": {
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      content: "''",
+      zIndex: "0",
+      left: "0px",
+      top: "0px",
+    },
+    "& $container": {
+      "& $gridContainer:last-child": {
+        "& $gridItem": {
+          borderBottom: "0",
+        },
+      },
+      "& $gridItem": {
+        border: "1px solid #000",
+        borderTop: "0",
+        borderLeft: "0",
+        "&:last-child": {
+          borderRight: "0",
+        },
+      },
+    },
+    "& $infoArea5": {
+      textAlign: "center",
+      maxWidth: "310px",
+      minHeight: "320px",
+      "& h4,& p,& svg,& .fab,& .fas,& .far,& .fal,& .material-icons": {
+        color: "#000",
+      },
+    },
+  },
+
+
   gridContainer: {},
   gridItem: {},
   textCenter: {

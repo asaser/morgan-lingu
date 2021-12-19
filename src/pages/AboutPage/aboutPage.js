@@ -26,11 +26,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import SectionDescription from "views/AboutUsPage/Sections/SectionDescription.js";
-import SectionTeam from "views/AboutUsPage/Sections/SectionTeam.js";
-import SectionServices from "views/AboutUsPage/Sections/SectionServices.js";
-import SectionOffice from "views/AboutUsPage/Sections/SectionOffice.js";
-import SectionContact from "views/AboutUsPage/Sections/SectionContact.js";
+import SectionInterestedAboutUs from "views/AboutUsPage/Sections/AboutUs/SectionInterestedAboutUs.js";
 
 import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.js";
 
@@ -70,22 +66,18 @@ function AboutPage() {
                 classes.textCenter
               )}
             >
-              <h1 className={classes.title}>About Us</h1>
-              <h4>
+              <h1 className={classes.title}>Nasi Lektorzy</h1>
+              {/* <h4>
                 Meet the amazing team behind this project and find out more
                 about how we work.
-              </h4>
+              </h4> */}
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-          <SectionDescription />
-          <SectionTeam />
-          <SectionServices />
-          <SectionOffice />
-          <SectionContact />
+        <div className={classes.container}>          
+          <SectionInterestedAboutUs />
         </div>
       </div>
       <Footer

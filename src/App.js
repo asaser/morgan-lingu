@@ -24,13 +24,13 @@ import SignupPage from "views/SignupPage/SignupPage.js";
 import ErrorPage from "views/ErrorPage/ErrorPage.js";
 
 import HomePage from "./pages/HomePage/HomePage";
-import LanguagePage from "./pages/LanguagePage/LanguagePage";
-import HowLearnPage from "./pages/HowLearnPage/HowLearnPage";
-import AboutPage from "./pages/AboutPage/AboutPage";
-import LanguageTestPage from "./pages/LanguageTestPage/LanguageTestPage";
-import PricesPage from "./pages/PricesPage/PricesPage";
-import JobOfferPage from "./pages/JobOfferPage/JobOfferPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
+import LanguagePage from "./pages/LanguagePage/languagePage";
+import HowLearnPage from "./pages/HowLearnPage/howLearnPage";
+import AboutPage from "./pages/AboutPage/aboutPage";
+import LanguageTestPage from "./pages/LanguageTestPage/languageTestPage";
+import PricesPage from "./pages/PricesPage/pricesPage";
+import JobOfferPage from "./pages/JobOfferPage/jobOfferPage";
+import ContactPage from "./pages/ContactPage/contactPage";
 
 
 var hist = createBrowserHistory();
