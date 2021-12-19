@@ -22,7 +22,7 @@ import Phone from "@material-ui/icons/Phone";
 import BusinessCenter from "@material-ui/icons/BusinessCenter";
 // core components
 import Header from "components/Header/Header.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
@@ -146,7 +146,7 @@ function ContactPage() {
     <div>
       <Header
         brand="MorganLingu"
-        links={<HeaderLinks dropdownHoverColor="dark" />}
+        links={<HeaderLinksMorganLingu dropdownHoverColor="dark" />}
         fixed
         color="dark"
       />

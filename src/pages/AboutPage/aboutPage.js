@@ -25,7 +25,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
 import SectionInterestedAboutUs from "views/AboutUsPage/Sections/AboutUs/SectionInterestedAboutUs.js";
 
 import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.js";
@@ -42,7 +42,7 @@ function AboutPage() {
     <div>
       <Header
         brand="MorganLingu"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{

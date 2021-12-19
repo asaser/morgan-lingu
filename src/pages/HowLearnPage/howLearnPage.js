@@ -17,7 +17,7 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
@@ -40,7 +40,7 @@ function HowLearnPage({ ...rest }) {
       <Header
         color="transparent"
         brand="MorganLingu"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{
           height: 300,

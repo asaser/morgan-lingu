@@ -89,151 +89,109 @@ export default function HeaderLinks(props) {
   const { dropdownHoverColor } = props;
   const classes = useStyles();
   return (
+    <>
     <List className={classes.list + " " + classes.mlAuto}>
 
-      
+        <ListItem className={classes.listItem}>
+          <Link to="/" className={classes.dropdownLink}>
+            Home
+          </Link>
+        </ListItem>
+
+
+
     <ListItem className={classes.listItem}>
-      <Link style={{color: "red", paddingLeft: "25px"}} to="/">
-        <AccountBalance className={classes.dropdownIcons} /> 
-        Home
-      </Link>
-    </ListItem>
+      <CustomDropdown
+        noLiPadding
+        navDropdown
+        hoverColor={dropdownHoverColor}
+        buttonText="Price of Languages"
+        buttonProps={{
+          className: classes.navLink,
+          color: "transparent",
+        }}
+        dropdownList={[
+          <Link to="/english" className={classes.dropdownLink}>
+            {/* <LineStyle className={classes.dropdownIcons} />  */}
+            English
+          </Link>,
+
+          <Link to="/german" className={classes.dropdownLink}>
+            {/* <Layers className={classes.dropdownIcons} /> */}
+            German
+          </Link>,
 
 
+          <Link to="/norwegian" className={classes.dropdownLink}>
+            {/* <Layers className={classes.dropdownIcons} /> */}
+            Norwegian
+          </Link>,
 
 
+          <Link to="/danish" className={classes.dropdownLink}>
+            {/* <Layers className={classes.dropdownIcons} /> */}
+            Danish
+          </Link>,
 
 
-    
-  <ListItem className={classes.listItem}>
-    <CustomDropdown
-      noLiPadding
-      navDropdown
-      hoverColor={dropdownHoverColor}
-      buttonText="Learn"
-      buttonProps={{
-        className: classes.navLink,
-        color: "transparent",
-      }}
-      buttonIcon={Apps}
-      dropdownList={[
-<p>sss</p>
-      ]}
-    />
-    </ListItem>
+          <Link to="/swedish" className={classes.dropdownLink}>
+            {/* <Layers className={classes.dropdownIcons} /> */}
+            Swedish
+          </Link>,
 
 
+          <Link to="/spanish" className={classes.dropdownLink}>
+            {/* <Layers className={classes.dropdownIcons} /> */}
+            Spanish
+          </Link>,
 
 
+          <Link to="/italian" className={classes.dropdownLink}>
+            {/* <Layers className={classes.dropdownIcons} /> */}
+            Italian
+          </Link>,
 
 
+        ]}
+      />
+      </ListItem>
 
-
-
-
-
-
-
-
-
-
-
-  <ListItem className={classes.listItem}>
-    <CustomDropdown
-      noLiPadding
-      navDropdown
-      hoverColor={dropdownHoverColor}
-      buttonText="Price of Languages"
-      buttonProps={{
-        className: classes.navLink,
-        color: "transparent",
-      }}
-      buttonIcon={Apps}
-      dropdownList={[
-        <Link to="/english" className={classes.dropdownLink}>
-          <LineStyle className={classes.dropdownIcons} /> 
-          English
-        </Link>,
-
-        <Link to="/german" className={classes.dropdownLink}>
-          <Layers className={classes.dropdownIcons} />
-          German
-        </Link>,
-
-
-        <Link to="/norwegian" className={classes.dropdownLink}>
-          <Layers className={classes.dropdownIcons} />
-          Norwegian
-        </Link>,
-
-
-        <Link to="/danish" className={classes.dropdownLink}>
-          <Layers className={classes.dropdownIcons} />
-          Danish
-        </Link>,
-
-
-        <Link to="/swedish" className={classes.dropdownLink}>
-          <Layers className={classes.dropdownIcons} />
-          Swedish
-        </Link>,
-
-
-        <Link to="/spanish" className={classes.dropdownLink}>
-          <Layers className={classes.dropdownIcons} />
-          Spanish
-        </Link>,
-
-
-        <Link to="/italian" className={classes.dropdownLink}>
-          <Layers className={classes.dropdownIcons} />
-          Italian
-        </Link>,
-
-
-      ]}
-    />
-    </ListItem>
-
-  <ListItem className={classes.listItem}>
-      <Link style={{color: "red", paddingLeft: "25px"}} to="/how-learn-page">
-        <AccountBalance className={classes.dropdownIcons} /> 
+    <ListItem className={classes.listItem}>
+      <Link to="/how-learn-page" className={classes.dropdownLink}>
         How Learn
       </Link>
-  </ListItem>
-
-
-  <ListItem className={classes.listItem}>
-      <Link style={{color: "red", paddingLeft: "25px"}} to="/about-page">
-        <AccountBalance className={classes.dropdownIcons} /> 
-        About Us
-      </Link>
-  </ListItem>
-
-    {/* <ListItem className={classes.listItem}>
-      <Link style={{color: "red", paddingLeft: "25px"}} to="/language-test-page">
-        <AccountBalance className={classes.dropdownIcons} /> 
-        Language Test
-      </Link>
-  </ListItem> */}
-
-    {/* <ListItem className={classes.listItem}>
-      <Link style={{color: "red", paddingLeft: "25px"}} to="/prices-page">
-        <AccountBalance className={classes.dropdownIcons} /> 
-        Prices
-      </Link>
-    </ListItem> */}
-
-    {/* <ListItem className={classes.listItem}>
-      <Link style={{color: "red", paddingLeft: "25px"}} to="/job-offer-page">
-        <AccountBalance className={classes.dropdownIcons} /> 
-        Job Offert
-      </Link>
-    </ListItem> */}
+    </ListItem>
 
     <ListItem className={classes.listItem}>
-      <Link style={{color: "red", paddingLeft: "25px"}} to="/contact-page">
-        <AccountBalance className={classes.dropdownIcons} /> 
+      <Link to="/about-page" className={classes.dropdownLink}>
+        About Us
+      </Link>
+    </ListItem>
+
+
+      {/* <ListItem className={classes.listItem}>
+        <Link style={{color: "red", paddingLeft: "25px"}} to="/language-test-page">
+          <AccountBalance className={classes.dropdownIcons} /> 
+          Language Test
+        </Link>
+    </ListItem> */}
+
+      {/* <ListItem className={classes.listItem}>
+        <Link style={{color: "red", paddingLeft: "25px"}} to="/prices-page">
+          <AccountBalance className={classes.dropdownIcons} /> 
+          Prices
+        </Link>
+      </ListItem> */}
+
+      {/* <ListItem className={classes.listItem}>
+        <Link style={{color: "red", paddingLeft: "25px"}} to="/job-offer-page">
+          <AccountBalance className={classes.dropdownIcons} /> 
+          Job Offert
+        </Link>
+      </ListItem> */}
+
+    <ListItem className={classes.listItem}>
+      <Link to="/contact-page" className={classes.dropdownLink}>
         Contact
       </Link>
     </ListItem>
@@ -395,18 +353,44 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkpr-navbar"
-          color={window.innerWidth < 960 ? "info" : "white"}
-          target="_blank"
-          className={classes.navButton}
-          round
-        >
-          <ShoppingCart className={classes.icons} /> check our courses
-        </Button>
-      </ListItem>
-    </List>
+
+
+
+      <List className={classes.list + " " + classes.mlAuto}>
+                <ListItem className={classes.listItem}>
+                  <Button
+                    color="transparent"
+                    href="https://twitter.com/CreativeTim?ref=creativetim"
+                    target="_blank"
+                    className={classes.navLink + " " + classes.navLinkJustIcon}
+                  >
+                    <i className={"fab fa-twitter"} />
+                  </Button>
+                </ListItem>
+                <ListItem className={classes.listItem}>
+                  <Button
+                    color="transparent"
+                    href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                    target="_blank"
+                    className={classes.navLink + " " + classes.navLinkJustIcon}
+                  >
+                    <i className={"fab fa-facebook"} />
+                  </Button>
+                </ListItem>
+                <ListItem className={classes.listItem}>
+                  <Button
+                    color="transparent"
+                    href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                    target="_blank"
+                    className={classes.navLink + " " + classes.navLinkJustIcon}
+                  >
+                    <i className={"fab fa-instagram"} />
+                  </Button>
+                </ListItem>
+              </List>
+
+      </List>
+      </>
   );
 }
 

@@ -27,7 +27,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
 import SectionDescription from "views/AboutUsPage/Sections/SectionDescription.js";
 import SectionTeam from "views/AboutUsPage/Sections/SectionTeam.js";
 import SectionServices from "views/AboutUsPage/Sections/SectionServices.js";
@@ -48,7 +48,7 @@ function PricesPage() {
     <div>
       <Header
         brand="MorganLingu"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{

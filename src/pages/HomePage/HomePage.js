@@ -8,7 +8,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // core components
 import Header from "components/Header/Header.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
+import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -39,7 +39,7 @@ export default function PresentationPage() {
     <div>
       <Header
         brand="MorganLingu777"
-        links={<HeaderLinks dropdownHoverColor="info" />}
+        links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
         fixed
         color="transparent"
         changeColorOnScroll={{
