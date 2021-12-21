@@ -27,6 +27,7 @@ import cardProfile2 from "assets/img/examples/card-profile2.jpg";
 import cardProfile4 from "assets/img/examples/card-profile4.jpg";
 import cardProfile1Square from "assets/img/faces/card-norway-flag.jpg";
 import cardNorwayFlag from "assets/img/faces/card-norway-flag.jpg";
+import randomLectorFace from "assets/img/faces/card-profile1-square.jpg";
 
 import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
 import cardProfile4Square from "assets/img/faces/card-profile4-square.jpg";
@@ -63,26 +64,26 @@ function SectionInterestedAboutUs({ ...rest }) {
             <GridItem xs={12} sm={12} md={12}>
               <Card>
                 <GridContainer>
-                  <GridItem xs={12} sm={6} md={6}>
-                      <CardAvatar profile>
-                        <a>
+                  <GridItem xs={12} sm={6} md={5}>
+                      <CardAvatar profile style={{position: "absolute"}}>
                           <img src={cardNorwayFlag} alt="..." />
-                        </a>
                       </CardAvatar>
-                      {/* <CardBody>
-                        <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                          <img src={cardNorwayFlag} alt="..." />
-                        </a>                      
-                      </CardBody> */}
-                      
-                      
+                      <div style={{padding: "0"}}>
+                        <img src={randomLectorFace} alt="..." />
+                      </div>
                   </GridItem>
-                  <GridItem xs={12} sm={6} md={6}>
+                  <GridItem xs={12} sm={6} md={7}>
                         <h4 className={classes.cardTitle}>George West</h4>
                         <Muted>
-                          <h6 className={classes.cardCategory}>BACKEND HACKER</h6>
+                          <h6 className={classes.cardCategory}>Lector Norwegian</h6>
                         </Muted>
                         <p className={classes.description}>
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
                           Don{"'"}t be scared of the truth because we need to restart
                           the human foundation in truth And I love you like Kanye
                           loves Kanye I love Rick Owens’ bed design but the back is...
@@ -95,7 +96,112 @@ function SectionInterestedAboutUs({ ...rest }) {
           </GridContainer>
 
 
-          
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={12}>
+              <Card>
+                <GridContainer>
+                  <GridItem xs={12} sm={6} md={5}>
+                      <CardAvatar profile style={{position: "absolute"}}>
+                          <img src={cardNorwayFlag} alt="..." />
+                      </CardAvatar>
+                      <div style={{padding: "0"}}>
+                        <img src={randomLectorFace} alt="..." />
+                      </div>
+                  </GridItem>
+                  <GridItem xs={12} sm={6} md={7}>
+                        <h4 className={classes.cardTitle}>George West</h4>
+                        <Muted>
+                          <h6 className={classes.cardCategory}>Lector Norwegian</h6>
+                        </Muted>
+                        <p className={classes.description}>
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                        </p>
+                      
+                  </GridItem>
+                </GridContainer>
+              </Card>
+            </GridItem>
+          </GridContainer>
+
+
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={12}>
+              <Card>
+                <GridContainer>
+                  <GridItem xs={12} sm={6} md={5}>
+                      <CardAvatar profile style={{position: "absolute"}}>
+                          <img src={cardNorwayFlag} alt="..." />
+                      </CardAvatar>
+                      <div style={{padding: "0"}}>
+                        <img src={randomLectorFace} alt="..." />
+                      </div>
+                  </GridItem>
+                  <GridItem xs={12} sm={6} md={7}>
+                        <h4 className={classes.cardTitle}>George West</h4>
+                        <Muted>
+                          <h6 className={classes.cardCategory}>Lector Norwegian</h6>
+                        </Muted>
+                        <p className={classes.description}>
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                        </p>
+                      
+                  </GridItem>
+                </GridContainer>
+              </Card>
+            </GridItem>
+          </GridContainer>
+
+
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={12}>
+              <Card>
+                <GridContainer>
+                  <GridItem xs={12} sm={6} md={5}>
+                      <CardAvatar profile style={{position: "absolute"}}>
+                          <img src={cardNorwayFlag} alt="..." />
+                      </CardAvatar>
+                      <div style={{padding: "0"}}>
+                        <img src={randomLectorFace} alt="..." />
+                      </div>
+                  </GridItem>
+                  <GridItem xs={12} sm={6} md={7}>
+                        <h4 className={classes.cardTitle}>George West</h4>
+                        <Muted>
+                          <h6 className={classes.cardCategory}>Lector Norwegian</h6>
+                        </Muted>
+                        <p className={classes.description}>
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                          Don{"'"}t be scared of the truth because we need to restart
+                          the human foundation in truth And I love you like Kanye
+                          loves Kanye I love Rick Owens’ bed design but the back is...
+                        </p>
+                      
+                  </GridItem>
+                </GridContainer>
+              </Card>
+            </GridItem>
+          </GridContainer>
 
         </div>
       </div>
