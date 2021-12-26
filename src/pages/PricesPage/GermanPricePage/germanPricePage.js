@@ -1,17 +1,8 @@
-// import React from 'react';
 
-// const PricesPage = () => {
-//     return (
-//         <h1>PricesPage</h1>
-//     )
-// }
-
-// export default PricesPage;
-
-
-
-/*eslint-disable*/
+/*eslint-disable*/ 
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -22,23 +13,21 @@ import ListItem from "@material-ui/core/ListItem";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
+import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Parallax from "components/Parallax/Parallax.js";
-import Footer from "components/Footer/Footer.js";
-// sections for this page
+import Button from "components/CustomButtons/Button.js";
 import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
-import SectionDescription from "views/AboutUsPage/Sections/SectionDescription.js";
-import SectionTeam from "views/AboutUsPage/Sections/SectionTeam.js";
-import SectionServices from "views/AboutUsPage/Sections/SectionServices.js";
-import SectionOffice from "views/AboutUsPage/Sections/SectionOffice.js";
-import SectionContact from "views/AboutUsPage/Sections/SectionContact.js";
+import Parallax from "components/Parallax/Parallax.js";
 
-import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.js";
+import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
 
-const useStyles = makeStyles(aboutUsStyle);
+// Sections for this page
+import SectionGermanPricing from "../../../views/SectionsPage/Sections/Pricing/SectionGermanPricing";
 
-function PricesPage() {
+const useStyles = makeStyles(landingPageStyle);
+
+function HowLearnPage({ ...rest }) {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -47,47 +36,42 @@ function PricesPage() {
   return (
     <div>
       <Header
+        color="transparent"
         brand="MorganLingu"
         links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
         fixed
-        color="transparent"
         changeColorOnScroll={{
           height: 300,
           color: "info",
         }}
+        {...rest}
       />
-      <Parallax
-        image={require("assets/img/bg9.jpg").default}
-        filter="dark"
-        small
-      >
+      <Parallax image={require("assets/img/bg8.jpg").default} filter="dark">
         <div className={classes.container}>
-          <GridContainer justify="center">
-            <GridItem
-              md={8}
-              sm={8}
-              className={classNames(
-                classes.mlAuto,
-                classes.mrAuto,
-                classes.textCenter
-              )}
-            >
-              <h1 className={classes.title}>PricesPage Page</h1>
+          <GridContainer>
+            <GridItem xs={12} sm={6} md={6}>
+              <h1 className={classes.title}>Danish</h1>
               <h4>
-                Meet the amazing team behind this project and find out more
-                about how we work.
+                <i>"Jakiś cytat o nauce językowej"</i>
               </h4>
+              <br />
+              <Button
+                color="danger"
+                size="lg"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                target="_blank"
+              >
+                <i className="fas fa-play" />
+                Może jakiś odnośnik????
+              </Button>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionDescription />
-          <SectionTeam />
-          <SectionServices />
-          <SectionOffice />
-          <SectionContact />
+          <SectionGermanPricing />
+
         </div>
       </div>
       <Footer
@@ -97,36 +81,32 @@ function PricesPage() {
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/?ref=mkpr-about-us"
-                    className={classes.block}
+                    href="https://www.creative-tim.com/?ref=mkpr-landing"
                     target="_blank"
+                    className={classes.block}
                   >
                     Creative Tim
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-about-us"
-                    className={classes.block}
+                    href="https://www.creative-tim.com/presentation?ref=mkpr-landing"
                     target="_blank"
+                    className={classes.block}
                   >
                     About us
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="//blog.creative-tim.com/"
-                    className={classes.block}
-                    target="_blank"
-                  >
+                  <a href="//blog.creative-tim.com/" className={classes.block}>
                     Blog
                   </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-about-us"
-                    className={classes.block}
+                    href="https://www.creative-tim.com/license?ref=mkpr-landing"
                     target="_blank"
+                    className={classes.block}
                   >
                     Licenses
                   </a>
@@ -137,7 +117,7 @@ function PricesPage() {
               &copy; {1900 + new Date().getYear()} , made with{" "}
               <Favorite className={classes.icon} /> by{" "}
               <a
-                href="https://www.creative-tim.com?ref=mkpr-about-us"
+                href="https://www.creative-tim.com/?ref=mkpr-landing"
                 target="_blank"
               >
                 Creative Tim
@@ -151,4 +131,4 @@ function PricesPage() {
   );
 }
 
-export default PricesPage;
+export default HowLearnPage;

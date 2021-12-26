@@ -28,7 +28,14 @@ import LanguagePage from "./pages/LanguagePage/languagePage";
 import HowLearnPage from "./pages/HowLearnPage/howLearnPage";
 import AboutPage from "./pages/AboutPage/aboutPage";
 import LanguageTestPage from "./pages/LanguageTestPage/languageTestPage";
-import PricesPage from "./pages/PricesPage/pricesPage";
+
+import DanishPricePage from "./pages/PricesPage/DanishPricePage/danishPricePage.js";
+import EnglishPricePage from "./pages/PricesPage/EnglishPricePage/englishPricePage.js";
+import GermanPricePage from "./pages/PricesPage/GermanPricePage/germanPricePage.js";
+import NorwegianPricePage from "./pages/PricesPage/NorwegianPricePage/norwegianPricePage.js";
+import SpanishPricePage from "./pages/PricesPage/SpanishPricePage/spanishPricePage.js";
+import SwedishPricePage from "./pages/PricesPage/SwedishPricePage/swedishPricePage.js";
+
 import JobOfferPage from "./pages/JobOfferPage/jobOfferPage";
 import ContactPage from "./pages/ContactPage/contactPage";
 
@@ -44,7 +51,15 @@ const App = () => {
                 <Route path="/how-learn-page" component={HowLearnPage} />
                 <Route path="/about-page" component={AboutPage} />
                 <Route path="/language-test-page" component={LanguageTestPage} />
-                <Route path="/prices-page" component={PricesPage} />
+
+                <Route path="/english" component={EnglishPricePage} />
+                <Route path="/german" component={GermanPricePage} />
+                <Route path="/norwegian" component={NorwegianPricePage} />
+                <Route path="/danish" component={DanishPricePage} />
+                <Route path="/swedish" component={SwedishPricePage} />
+                <Route path="/spanish" component={SpanishPricePage} />
+
+
                 <Route path="/job-offer-page" component={JobOfferPage} />
                 <Route path="/contact-page" component={ContactPage} />
 

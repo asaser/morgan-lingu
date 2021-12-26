@@ -184,13 +184,6 @@ export default function HeaderLinks(props) {
           Spanish
         </Link>,
 
-
-        <Link to="/italian" className={classes.dropdownLink}>
-          <Layers className={classes.dropdownIcons} />
-          Italian
-        </Link>,
-
-
       ]}
     />
     </ListItem>
