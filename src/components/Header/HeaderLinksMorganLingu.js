@@ -90,11 +90,11 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <>
-    <List className={classes.list + " " + classes.mlAuto}>
+    <List>
 
         <ListItem className={classes.listItem}>
           <Link to="/" className={classes.dropdownLink}>
-            Home
+            STRONA GŁÓWNA
           </Link>
         </ListItem>
 
@@ -105,7 +105,7 @@ export default function HeaderLinks(props) {
         noLiPadding
         navDropdown
         hoverColor={dropdownHoverColor}
-        buttonText="Price of Languages"
+        buttonText="Cennik"
         buttonProps={{
           className: classes.navLink,
           color: "transparent",
@@ -113,37 +113,37 @@ export default function HeaderLinks(props) {
         dropdownList={[
           <Link to="/english" className={classes.dropdownLink}>
             {/* <LineStyle className={classes.dropdownIcons} />  */}
-            English
+            Angielski
           </Link>,
 
           <Link to="/german" className={classes.dropdownLink}>
             {/* <Layers className={classes.dropdownIcons} /> */}
-            German
+            Niemiecki
           </Link>,
 
 
           <Link to="/norwegian" className={classes.dropdownLink}>
             {/* <Layers className={classes.dropdownIcons} /> */}
-            Norwegian
+            Norweski
           </Link>,
 
 
-          <Link to="/danish" className={classes.dropdownLink}>
-            {/* <Layers className={classes.dropdownIcons} /> */}
-            Danish
-          </Link>,
+          // <Link to="/danish" className={classes.dropdownLink}>
+          //   {/* <Layers className={classes.dropdownIcons} /> */}
+          //   Danish
+          // </Link>,
 
 
-          <Link to="/swedish" className={classes.dropdownLink}>
-            {/* <Layers className={classes.dropdownIcons} /> */}
-            Swedish
-          </Link>,
+          // <Link to="/swedish" className={classes.dropdownLink}>
+          //   {/* <Layers className={classes.dropdownIcons} /> */}
+          //   Swedish
+          // </Link>,
 
 
-          <Link to="/spanish" className={classes.dropdownLink}>
-            {/* <Layers className={classes.dropdownIcons} /> */}
-            Spanish
-          </Link>,
+          // <Link to="/spanish" className={classes.dropdownLink}>
+          //   {/* <Layers className={classes.dropdownIcons} /> */}
+          //   Spanish
+          // </Link>,
 
 
 
@@ -153,13 +153,13 @@ export default function HeaderLinks(props) {
 
     <ListItem className={classes.listItem}>
       <Link to="/how-learn-page" className={classes.dropdownLink}>
-        How Learn
+        JAK UCZYMY
       </Link>
     </ListItem>
 
     <ListItem className={classes.listItem}>
       <Link to="/about-page" className={classes.dropdownLink}>
-        About Us
+        O NAS
       </Link>
     </ListItem>
 
@@ -187,7 +187,7 @@ export default function HeaderLinks(props) {
 
     <ListItem className={classes.listItem}>
       <Link to="/contact-page" className={classes.dropdownLink}>
-        Contact
+        KONTAKT
       </Link>
     </ListItem>
 

@@ -1,12 +1,3 @@
-// import React from 'react';
-
-// const AboutPage = () => {
-//     return (
-//         <h1>AboutPage</h1>
-//     )
-// }
-
-// export default AboutPage;
 
 /*eslint-disable*/
 import React from "react";
@@ -16,6 +7,8 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import Grid from '@material-ui/core/Grid';
+
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 // core components
@@ -24,6 +17,8 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Footer from "components/Footer/Footer.js";
+import PinDrop from "@material-ui/icons/PinDrop";
+import FacebookIcon from '@material-ui/icons/Facebook';
 // sections for this page
 import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
 import SectionInterestedAboutUs from "views/AboutUsPage/Sections/AboutUs/SectionInterestedAboutUs.js";
@@ -82,58 +77,26 @@ function AboutPage() {
       </div>
       <Footer
         content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=mkpr-about-us"
-                    className={classes.block}
-                    target="_blank"
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-about-us"
-                    className={classes.block}
-                    target="_blank"
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="//blog.creative-tim.com/"
-                    className={classes.block}
-                    target="_blank"
-                  >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-about-us"
-                    className={classes.block}
-                    target="_blank"
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-about-us"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
-            </div>
+          <div style={{marginTop: "30px"}}>
+            <Grid container>
+              <Grid p xs={12} md={8} style={{fontWeight: "bold"}}>
+                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania zadzwoń do nas!</p>
+                <p style={{fontSize: "1.5em"}}>+48 604 678 347</p>
+              </Grid>
+              <Grid p xs={6} md={2}>
+                <p style={{fontWeight: "bold"}}>
+                  <PinDrop /> Szkoła Językowa MorganLingu
+                </p>
+              </Grid>
+              <Grid p xs={6} md={2}>
+                <a
+                  href="https://www.facebook.com/morganLingu"
+                  target="_blank"
+                >
+                    <FacebookIcon />
+                </a>  
+              </Grid>
+            </Grid>
           </div>
         }
       />

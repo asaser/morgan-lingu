@@ -6,6 +6,8 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import Grid from '@material-ui/core/Grid';
+
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
@@ -14,6 +16,8 @@ import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
+import PinDrop from "@material-ui/icons/PinDrop";
+import FacebookIcon from '@material-ui/icons/Facebook';
 // sections for this page
 import SectionDescription from "views/PresentationPage/Sections/SectionDescription.js";
 import SectionComponents from "views/PresentationPage/Sections/SectionComponents.js";
@@ -38,7 +42,7 @@ export default function PresentationPage() {
   return (
     <div>
       <Header
-        brand="MorganLingu777"
+        brand="MorganLingu"
         links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
         fixed
         color="transparent"
@@ -79,91 +83,27 @@ export default function PresentationPage() {
       </div>
       <SectionPricing />
       <Footer
-        theme="white"
         content={
-          <div>
-            <div className={classes.left}>
-              <a
-                href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkpr-presentation"
-                target="_blank"
-                className={classes.footerBrand}
-              >
-                MorganLingu
-              </a>
-            </div>
-            <div className={classes.pullCenter}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=mkpr-presentation"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-presentation"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-presentation"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.rightLinks}>
-              <ul>
-                <li>
-                  <Button
-                    href="https://twitter.com/CreativeTim?ref=creativetim"
-                    target="_blank"
-                    color="twitter"
-                    justIcon
-                    simple
-                  >
-                    <i className="fab fa-twitter" />
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    href="https://dribbble.com/creativetim?ref=creativetim"
-                    target="_blank"
-                    color="dribbble"
-                    justIcon
-                    simple
-                  >
-                    <i className="fab fa-dribbble" />
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    href="https://instagram.com/CreativeTimOfficial?ref=creativetim"
-                    target="_blank"
-                    color="instagram"
-                    justIcon
-                    simple
-                  >
-                    <i className="fab fa-instagram" />
-                  </Button>
-                </li>
-              </ul>
-            </div>
+          <div style={{marginTop: "30px"}}>
+            <Grid container>
+              <Grid p xs={12} md={8} style={{fontWeight: "bold"}}>
+                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania zadzwoń do nas!</p>
+                <p style={{fontSize: "1.5em"}}>+48 604 678 347</p>
+              </Grid>
+              <Grid p xs={6} md={2}>
+                <p style={{fontWeight: "bold"}}>
+                  <PinDrop /> Szkoła Językowa MorganLingu
+                </p>
+              </Grid>
+              <Grid p xs={6} md={2}>
+                <a
+                  href="https://www.facebook.com/morganLingu"
+                  target="_blank"
+                >
+                    <FacebookIcon />
+                </a>  
+              </Grid>
+            </Grid>
           </div>
         }
       />

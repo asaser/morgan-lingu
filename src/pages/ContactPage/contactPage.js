@@ -15,11 +15,16 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import Grid from '@material-ui/core/Grid';
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
+import EmailIcon from '@material-ui/icons/Email';
+import LanguageIcon from '@material-ui/icons/Language';
 import BusinessCenter from "@material-ui/icons/BusinessCenter";
+import FacebookIcon from '@material-ui/icons/Facebook';
+
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
@@ -29,110 +34,10 @@ import InfoArea from "components/InfoArea/InfoArea.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 import Footer from "components/Footer/Footer.js";
+import Parallax from "components/Parallax/Parallax.js";
 
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.js";
 
-const CustomSkinMap = () => {
-  const mapRef = React.useRef(null);
-  React.useEffect(() => {
-    let google = window.google;
-    let map = mapRef.current;
-    let lat = "44.43353";
-    let lng = "26.093928";
-    const myLatlng = new google.maps.LatLng(lat, lng);
-    const mapOptions = {
-      zoom: 14,
-      center: myLatlng,
-      scrollwheel: false,
-      zoomControl: true,
-      styles: [
-        {
-          featureType: "water",
-          stylers: [{ saturation: 43 }, { lightness: -11 }, { hue: "#0088ff" }],
-        },
-        {
-          featureType: "road",
-          elementType: "geometry.fill",
-          stylers: [
-            { hue: "#ff0000" },
-            { saturation: -100 },
-            { lightness: 99 },
-          ],
-        },
-        {
-          featureType: "road",
-          elementType: "geometry.stroke",
-          stylers: [{ color: "#808080" }, { lightness: 54 }],
-        },
-        {
-          featureType: "landscape.man_made",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#ece2d9" }],
-        },
-        {
-          featureType: "poi.park",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#ccdca1" }],
-        },
-        {
-          featureType: "road",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#767676" }],
-        },
-        {
-          featureType: "road",
-          elementType: "labels.text.stroke",
-          stylers: [{ color: "#ffffff" }],
-        },
-        { featureType: "poi", stylers: [{ visibility: "off" }] },
-        {
-          featureType: "landscape.natural",
-          elementType: "geometry.fill",
-          stylers: [{ visibility: "on" }, { color: "#b8cb93" }],
-        },
-        { featureType: "poi.park", stylers: [{ visibility: "on" }] },
-        {
-          featureType: "poi.sports_complex",
-          stylers: [{ visibility: "on" }],
-        },
-        { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
-        {
-          featureType: "poi.business",
-          stylers: [{ visibility: "simplified" }],
-        },
-      ],
-    };
-
-    map = new google.maps.Map(map, mapOptions);
-
-    const marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      animation: google.maps.Animation.DROP,
-      title: "MorganLingu!",
-    });
-
-    const contentString =
-      '<div class="info-window-content"><h2>MorganLingu</h2>' +
-      "<p>A premium Kit for React, Material-UI, and React Hooks.</p></div>";
-
-    const infowindow = new google.maps.InfoWindow({
-      content: contentString,
-    });
-
-    google.maps.event.addListener(marker, "click", function () {
-      infowindow.open(map, marker);
-    });
-  });
-  return (
-    <>
-      <div
-        style={{ height: `100%`, borderRadius: "6px", overflow: "hidden" }}
-        ref={mapRef}
-      ></div>
-    </>
-  );
-};
 
 const useStyles = makeStyles(contactUsStyle);
 
@@ -150,153 +55,212 @@ function ContactPage() {
         fixed
         color="dark"
       />
-      <div className={classes.bigMap}>
-        <CustomSkinMap />
-      </div>
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.contactContent}>
-          <div className={classes.container}>
-            <h2 className={classes.title}>Send us a message</h2>
-            <GridContainer>
-              <GridItem md={6} sm={6}>
-                <p>
-                  You can contact us with anything related to our Products. We
-                  {"'"}ll get in touch with you as soon as possible.
-                  <br />
-                  <br />
-                </p>
-                <form>
-                  <CustomInput
-                    labelText="Your Name"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Email address"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Phone"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Your message"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                    inputProps={{
-                      multiline: true,
-                      rows: 6,
-                    }}
-                  />
-                  <div className={classes.textCenter}>
-                    <Button color="primary" round>
-                      Contact us
-                    </Button>
+
+      <Parallax
+        image={require("assets/img/bg9.jpg").default}
+        filter="dark"
+        small
+      >
+        <div className={classes.container}>
+          <GridContainer justify="center">
+            <GridItem
+              md={8}
+              sm={8}
+              className={classNames(
+                classes.mrAuto,
+                classes.textCenter
+              )}
+            >
+                <h1 className={classes.title} style={{color: "#fff"}}>Zadzwoń lub napisz</h1>
+                <h3 className={classes.title} style={{color: "#fff"}}>A my nauczymy Ciebie języka obcego</h3>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
+
+
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          <div className={classes.contactContent}>
+            <div className={classes.container}>
+              {/* <h1 className={classes.title}>Zadzwoń lub napisz</h1>
+              <h2 className={classes.title}>A my nauczymy Ciebie języka obcego</h2> */}
+              <GridContainer>
+                {/* <GridItem md={6} sm={6}>
+                  <p>
+                    You can contact us with anything related to our Products. We
+                    {"'"}ll get in touch with you as soon as possible.
+                    <br />
+                    <br />
+                  </p>
+                  <form>
+                    <CustomInput
+                      labelText="Your Name"
+                      id="float"
+                      formControlProps={{
+                        fullWidth: true,
+                      }}
+                    />
+                    <CustomInput
+                      labelText="Email address"
+                      id="float"
+                      formControlProps={{
+                        fullWidth: true,
+                      }}
+                    />
+                    <CustomInput
+                      labelText="Phone"
+                      id="float"
+                      formControlProps={{
+                        fullWidth: true,
+                      }}
+                    />
+                    <CustomInput
+                      labelText="Your message"
+                      id="float"
+                      formControlProps={{
+                        fullWidth: true,
+                      }}
+                      inputProps={{
+                        multiline: true,
+                        rows: 6,
+                      }}
+                    />
+                    <div className={classes.textCenter}>
+                      <Button color="primary" round>
+                        Contact us
+                      </Button>
+                    </div>
+                  </form>
+                </GridItem> */}
+
+                <GridItem sm={12} md={6} lg={6} className={classes.mlAuto}>
+                  <h2 style={{fontWeight: "bold"}}>Kontankt</h2>
+                  <h3>Dane Szkoły Językowej:</h3>
+
+                  <div style={{marginTop: "40px"}}>
+                      <p style={{fontWeight: "bold"}}>
+                        <PinDrop /> Szkoła Językowa MorganLingu
+                      </p>
+                      <p>
+                        <Phone /> +48 604 678 347
+                      </p>
+                      <p>
+                        <EmailIcon /> morganlingu@gmail.com
+                      </p>
+                      <p>
+                        <LanguageIcon /> 
+                        <a
+                          href="https://morganlingu.pl/"
+                          target="_blank"
+                        >
+                          https://www.morganlingu.pl/
+                        </a>  
+                      </p>
                   </div>
-                </form>
-              </GridItem>
-              <GridItem md={4} sm={4} className={classes.mlAuto}>
-                <InfoArea
-                  className={classes.info}
-                  title="Find us at the office"
-                  description={
+
+                  <div style={{marginTop: "50px"}}>
                     <p>
-                      Bld Mihail Kogalniceanu, nr. 8,sss <br /> 7652 Bucharest,{" "}
-                      <br /> Romania
+                      Odwiedź nas na:
+                      <a
+                        href="https://www.facebook.com/morganLingu"
+                        target="_blank"
+                      >
+                          <FacebookIcon size='large' />
+                      </a>
                     </p>
-                  }
-                  icon={PinDrop}
-                  iconColor="primary"
-                />
-                <InfoArea
-                  className={classes.info}
-                  title="Give us a ring"
-                  description={
-                    <p>
-                      Michael Jordan <br /> +40 762 321 762 <br /> Mon - Fri,
-                      8:00-22:00
-                    </p>
-                  }
-                  icon={Phone}
-                  iconColor="primary"
-                />
-                <InfoArea
-                  className={classes.info}
-                  title="Legal Information"
-                  description={
-                    <p>
-                      Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
-                      EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
-                    </p>
-                  }
-                  icon={BusinessCenter}
-                  iconColor="primary"
-                />
-              </GridItem>
-            </GridContainer>
+                  </div>
+
+                  {/* <InfoArea
+                    className={classes.info}
+                    title="Kontakt"
+                    description={
+                      <div>
+                        <p>
+                          Telefon · +48 604 678 347<br />
+                          Mail · morganlingu@gmail.com<br />
+                          Facebook · https://www.facebook.com/morganLingu
+                        </p>
+
+                        <p>Odwiedź nas na: https://www.facebook.com/morganLingu</p>
+                      </div>
+                    }
+                    icon={Phone}
+                    iconColor="primary"
+                  /> */}
+                  
+                </GridItem>
+
+                <GridItem sm={12} md={6} lg={6} className={classes.mlAuto}>
+                  <h2 style={{fontWeight: "bold"}}>Zapisy prowadzone są:</h2>
+
+                  <div style={{marginTop: "40px"}}>
+                      <p>
+                        · Telefonicznie - +48 604 678 347
+                      </p>
+                      <p>
+                        · Mailowo - morganlingu@gmail.com
+                      </p>
+                      <p>
+                        · Przez Facebooka - 
+                        <a
+                          href="https://www.facebook.com/morganLingu"
+                          target="_blank"
+                        >
+                            <FacebookIcon />
+                        </a>  
+                      </p>
+                  </div>
+
+
+                  {/* <InfoArea
+                    className={classes.info}
+                    title="Zapisy prowadzone są:"
+                    description={
+                      <ul>
+                        <li>
+                          Telefonicznie - +48 604 678 347
+                        </li>
+                        <li>
+                          Mailowo - morganlingu@gmail.com
+                        </li>
+                        <li>
+                          Przez Facebooka - https://www.facebook.com/morganLingu
+                        </li>
+                      </ul>
+                    }
+                    icon={PinDrop}
+                    iconColor="primary"
+                  /> */}
+                </GridItem>
+
+              </GridContainer>
+            </div>
           </div>
         </div>
-      </div>
+
+      
       <Footer
         content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=mkpr-contact-us"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=mkpr-contact-us"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a href="//blog.creative-tim.com/" className={classes.block}>
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=mkpr-contact-us"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=mkpr-contact-us"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
-            </div>
+          <div style={{marginTop: "30px"}}>
+            <Grid container>
+              <Grid p xs={12} md={8} style={{fontWeight: "bold"}}>
+                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania zadzwoń do nas!</p>
+                <p style={{fontSize: "1.5em"}}>+48 604 678 347</p>
+              </Grid>
+              <Grid p xs={6} md={2}>
+                <p style={{fontWeight: "bold"}}>
+                  <PinDrop /> Szkoła Językowa MorganLingu
+                </p>
+              </Grid>
+              <Grid p xs={6} md={2}>
+                <a
+                  href="https://www.facebook.com/morganLingu"
+                  target="_blank"
+                >
+                    <FacebookIcon />
+                </a>  
+              </Grid>
+            </Grid>
           </div>
         }
       />
