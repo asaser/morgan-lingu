@@ -53,9 +53,9 @@ function SectionInterestedAboutUs({ ...rest }) {
               }
             >
               <h2 className={classes.title}>Poznaj naszych lektorów językowych</h2>
-              <h5 className={classes.descriptionWhite}>
+              {/* <h5 className={classes.descriptionWhite}>
                 Może jakiś tekst
-              </h5>
+              </h5> */}
             </GridItem>
           </GridContainer>
 

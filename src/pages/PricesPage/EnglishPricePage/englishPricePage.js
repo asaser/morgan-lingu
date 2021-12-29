@@ -54,20 +54,10 @@ function HowLearnPage({ ...rest }) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>English</h1>
+              <h1 className={classes.title}>Język Angielski</h1>
               <h4>
-                <i>"Jakiś cytat o nauce językowej"</i>
+                <i>"Jakiś cytat o nauce językowej" - "tłumaczenie tego cytatu na język polski"</i>
               </h4>
-              <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-              >
-                <i className="fas fa-play" />
-                Może jakiś odnośnik????
-              </Button>
             </GridItem>
           </GridContainer>
         </div>

@@ -42,11 +42,11 @@ export default function SectionPricing({ ...rest }) {
                 classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
               }
             >
-              <h2 className={classes.title}>English Pick the best plan for you</h2>
-              <h5 className={classes.description}>
+              <h2 className={classes.title}>Znajdź idealny kurs dla siebie</h2>
+              {/* <h5 className={classes.description}>
                 You have Free Unlimited Updates and Premium Support on each
                 package.
-              </h5>
+              </h5> */}
               <div className={classes.sectionSpace} />
             </GridItem>
           </GridContainer>
