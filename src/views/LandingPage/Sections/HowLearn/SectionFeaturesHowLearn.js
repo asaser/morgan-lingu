@@ -37,7 +37,7 @@ export default function SectionFeatures({ ...rest }) {
               classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
             }
           >
-            <h2 className={classes.title}>Your life will be much easier</h2>
+            <h2 className={classes.title}>Nasze metody nauki</h2>
           </GridItem>
           <div className={classes.container}>
             <GridContainer className={classes.gridContainer}>

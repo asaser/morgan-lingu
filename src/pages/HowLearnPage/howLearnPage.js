@@ -31,6 +31,8 @@ import SectionProductHowLearn from "../../views/LandingPage/Sections/HowLearn/Se
 import SectionWorkHowLearn from "../../views/LandingPage/Sections/HowLearn/SectionWorkHowLearn.js";
 import SectionFeaturesHowLearn from "../../views/LandingPage/Sections/HowLearn/SectionFeaturesHowLearn.js"; 
 
+import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/productStyle.js";
+
 const useStyles = makeStyles(landingPageStyle);
 
 function HowLearnPage({ ...rest }) {
@@ -56,9 +58,10 @@ function HowLearnPage({ ...rest }) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>How We Learn</h1>
+              <h1 className={classes.title}>Jak uczymy</h1>
               <h4>
-                <i>"Jakiś cytat o nauce językowej"</i>
+                <i>„Granice mojego języka są granicami mojego świata”</i>
+                <p>~ Ludwig Wittgenstein</p>
               </h4>
               <br />
               <Button
@@ -76,9 +79,21 @@ function HowLearnPage({ ...rest }) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionProductHowLearn />
-          <SectionWorkHowLearn />
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={8} md={8}>
+              <h2 style={{color: "#000", alignItems: "center"}}>MorganLingu</h2>
+              <h5 style={{color: "#000", fontSize: "1.3em"}}>
+                Jesteśmy szkołą jezykową, która stosuje skandynawskie metody nauczania językowego.
+                Te metody są dostosowane dla każdego obojętnie jakiego wieku jest osoba
+                oraz jakie ma doświadczenie językowe. Kładziemy głównie nacisk na używanie
+                danego języka w życiu codziennym oraz w życiu zawodowym ...
+              </h5>
+            </GridItem>
+          </GridContainer>
+
           <SectionFeaturesHowLearn />
+          <SectionWorkHowLearn />
+          <SectionProductHowLearn />
         </div>
       </div>
       <Footer
