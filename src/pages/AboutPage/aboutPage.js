@@ -36,17 +36,19 @@ function AboutPage() {
   return (
     <div>
       <Header
+        // color="transparent"
         brand="MorganLingu"
         links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
         fixed
-        color="transparent"
-        changeColorOnScroll={{
-          height: 300,
-          color: "info",
-        }}
+        color="dark"
+        // changeColorOnScroll={{
+        //   height: 300,
+        //   color: "info",
+        // }}
+        // {...rest}
       />
       <Parallax
-        image={require("assets/img/bg9.jpg").default}
+        image={require("assets/img/bgAboutUs.jpg").default}
         filter="dark"
         small
       >
@@ -62,9 +64,6 @@ function AboutPage() {
               )}
             >
               <h1 className={classes.title}>Nasi Lektorzy</h1>
-              <h4>
-                Kilka słów o naszych lektorach
-              </h4>
             </GridItem>
           </GridContainer>
         </div>
@@ -78,14 +77,21 @@ function AboutPage() {
         content={
           <div style={{marginTop: "30px"}}>
             <Grid container>
-              <Grid p xs={12} md={6} style={{fontWeight: "bold"}}>
-                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania zadzwoń do nas!</p>
+              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
+                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania - zadzwoń do nas!</p>
                 <p style={{fontSize: "1.5em"}}>+48 604 678 347</p>
               </Grid>
-
-              <Grid xs={12} md={6}>
-                <p style={{fontSize: "1.5em"}}>Lub napisz do nas: </p>
+              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
+                <p style={{fontSize: "1.5em"}}>Lub napisz!</p>
                 <p style={{fontSize: "1.5em"}}>morganlingu@gmail.com</p>
+              </Grid>
+              <Grid p xs={6} md={2}>
+                <a
+                  href="https://www.facebook.com/morganLingu"
+                  target="_blank"
+                >
+                    <FacebookIcon />
+                </a>  
               </Grid>
             </Grid>
           </div>

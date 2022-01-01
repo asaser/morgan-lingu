@@ -42,19 +42,19 @@ export default function SectionPricing({ ...rest }) {
                 classes.mlAuto + " " + classes.mrAuto + " " + classes.textCenter
               }
             >
-              <h2 className={classes.title}>Znajdź idealny kurs dla siebie222</h2>
+              <h2 className={classes.title}>Język Norweski</h2>
               {/* <h5 className={classes.description}>
                 You have Free Unlimited Updates and Premium Support on each
                 package.
               </h5> */}
-              <div className={classes.sectionSpace} />
+              {/* <div className={classes.sectionSpace} /> */}
             </GridItem>
           </GridContainer>
           <GridContainer>
-            <GridItem xs={12} sm={6} md={6} lg={3}>
+            <GridItem xs={12} sm={6} md={6} lg={4}>
               <Card pricing plain>
                 <CardBody pricing plain>
-                  <h6 className={classes.cardCategory}>STARTUP</h6>
+                  <h6 className={classes.cardCategory}>ZAJĘCIA INDYWIDUALNE</h6>
                   <h1 className={classes.cardTitle}>
                     <small>$</small> 0
                   </h1>
@@ -63,68 +63,41 @@ export default function SectionPricing({ ...rest }) {
                       <Success>
                         <Check />
                       </Success>{" "}
-                      Sharing Tools
-                    </li>
-                    <li>
-                      <Danger>
-                        <Close />
-                      </Danger>{" "}
-                      Design Tools
-                    </li>
-                    <li>
-                      <Danger>
-                        <Close />
-                      </Danger>{" "}
-                      Private Messages
-                    </li>
-                    <li>
-                      <Danger>
-                        <Close />
-                      </Danger>{" "}
-                      Personal Brand
+                      ONLINE
                     </li>
                   </ul>
                 </CardBody>
                 <CardFooter pricing className={classes.justifyContentCenter}>
                   <Button color="danger" round>
-                    Downgrade Plan
+                    Zapisz się
                   </Button>
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={6} md={6} lg={3}>
+            <GridItem xs={12} sm={6} md={6} lg={4}>
               <Card pricing color="success">
                 <CardBody pricing>
-                  <h6 className={classes.marginBottom30}>SMALL COMPANY</h6>
+                  <h6 className={classes.marginBottom30}>ZAJĘCIA DLA 2 OSÓB</h6>
                   <h1 className={classes.cardTitleWhite}>
                     <small>$</small> 89
                   </h1>
                   <ul>
                     <li>
-                      <Check /> Sharing Tools
-                    </li>
-                    <li>
-                      <Check /> Design Tools
-                    </li>
-                    <li>
-                      <Close /> Private Messages
-                    </li>
-                    <li>
-                      <Close /> Personal Brand
+                      <Check /> ONLINE
                     </li>
                   </ul>
                 </CardBody>
                 <CardFooter pricing className={classes.justifyContentCenter}>
                   <Button color="white" round disabled>
-                    Current Plan
+                    Zapisz się
                   </Button>
                 </CardFooter>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={6} md={6} lg={3}>
+            <GridItem xs={12} sm={6} md={6} lg={4}>
               <Card pricing plain>
                 <CardBody pricing>
-                  <h6 className={classes.cardCategory}>LARGE COMPANY</h6>
+                  <h6 className={classes.cardCategory}>ZAJĘCIA GRUPOWE</h6>
                   <h1 className={classes.cardTitle}>
                     <small>$</small> 189
                   </h1>
@@ -133,72 +106,13 @@ export default function SectionPricing({ ...rest }) {
                       <Success>
                         <Check />
                       </Success>{" "}
-                      Sharing Tools
-                    </li>
-                    <li>
-                      <Success>
-                        <Check />
-                      </Success>{" "}
-                      Design Tools
-                    </li>
-                    <li>
-                      <Success>
-                        <Check />
-                      </Success>{" "}
-                      Private Messages
-                    </li>
-                    <li>
-                      <Danger>
-                        <Close />
-                      </Danger>{" "}
-                      Personal Brand
+                      ONLINE
                     </li>
                   </ul>
                 </CardBody>
                 <CardFooter pricing className={classes.justifyContentCenter}>
                   <Button color="success" round>
-                    Upgrade Plan
-                  </Button>
-                </CardFooter>
-              </Card>
-            </GridItem>
-            <GridItem xs={12} sm={6} md={6} lg={3}>
-              <Card pricing plain>
-                <CardBody pricing>
-                  <h6 className={classes.cardCategory}>LARGE COMPANY</h6>
-                  <h1 className={classes.cardTitle}>
-                    <small>$</small> 189
-                  </h1>
-                  <ul>
-                    <li>
-                      <Success>
-                        <Check />
-                      </Success>{" "}
-                      Sharing Tools
-                    </li>
-                    <li>
-                      <Success>
-                        <Check />
-                      </Success>{" "}
-                      Design Tools
-                    </li>
-                    <li>
-                      <Success>
-                        <Check />
-                      </Success>{" "}
-                      Private Messages
-                    </li>
-                    <li>
-                      <Success>
-                        <Check />
-                      </Success>{" "}
-                      Personal Brand
-                    </li>
-                  </ul>
-                </CardBody>
-                <CardFooter pricing className={classes.justifyContentCenter}>
-                  <Button color="success" round>
-                    Upgrade Plan
+                    Zapisz się
                   </Button>
                 </CardFooter>
               </Card>

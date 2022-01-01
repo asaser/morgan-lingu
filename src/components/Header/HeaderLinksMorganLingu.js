@@ -98,14 +98,18 @@ export default function HeaderLinks(props) {
           </Link>
         </ListItem>
 
-
+    <ListItem className={classes.listItem}>
+      <Link to="/price-language-page" className={classes.dropdownLink}>
+        CENNIK
+      </Link>
+    </ListItem>
 
     <ListItem className={classes.listItem}>
       <CustomDropdown
         noLiPadding
         navDropdown
         hoverColor={dropdownHoverColor}
-        buttonText="Cennik"
+        buttonText="Języki"
         buttonProps={{
           className: classes.navLink,
           color: "transparent",

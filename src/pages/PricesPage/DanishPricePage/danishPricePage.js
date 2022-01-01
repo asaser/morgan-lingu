@@ -82,14 +82,13 @@ function HowLearnPage({ ...rest }) {
         content={
           <div style={{marginTop: "30px"}}>
             <Grid container>
-              <Grid p xs={12} md={8} style={{fontWeight: "bold"}}>
-                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania zadzwoń do nas!</p>
+              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
+                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania - zadzwoń do nas!</p>
                 <p style={{fontSize: "1.5em"}}>+48 604 678 347</p>
               </Grid>
-              <Grid p xs={6} md={2}>
-                <p style={{fontWeight: "bold"}}>
-                  <PinDrop /> Szkoła Językowa MorganLingu
-                </p>
+              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
+                <p style={{fontSize: "1.5em"}}>Lub napisz!</p>
+                <p style={{fontSize: "1.5em"}}>morganlingu@gmail.com</p>
               </Grid>
               <Grid p xs={6} md={2}>
                 <a
