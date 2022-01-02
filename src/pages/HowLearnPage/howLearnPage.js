@@ -84,12 +84,14 @@ function HowLearnPage({ ...rest }) {
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={8} md={8}>
-              <h2 style={{color: "#000", alignItems: "center"}}>MorganLingu</h2>
+              <h2 style={{color: "#000", display: "flex", justifyContent: "center", alignItems: "center"}}>Dlaczego MorganLingu?</h2>
               <h5 style={{color: "#000", fontSize: "1.3em"}}>
-                Jesteśmy szkołą jezykową, która stosuje skandynawskie metody nauczania językowego.
-                Te metody są dostosowane dla każdego obojętnie jakiego wieku jest osoba
-                oraz jakie ma doświadczenie językowe. Kładziemy głównie nacisk na używanie
-                danego języka w życiu codziennym oraz w życiu zawodowym ...
+                U nas NIE uczysz się tak jak w zwykłej szkole metodą 3Z (Zakup, Zdaj, Zapomnij),
+                NIE będziesz mieć nudnych lekcji polegających tylko na czytaniu z podręcznika.
+                <br />
+                W MorganLingu stawiamy na różnorodność form nauki, w taki sposób, w jaki stykałbyś się z nimi
+                podczas życia codziennego oraz zawodowego żyjąc w danym kraju.
+                Nasze metody nauki dostosowane są do każdego, niezależnie od wieku oraz doświadczenia językowego.
               </h5>
             </GridItem>
           </GridContainer>
@@ -118,6 +120,9 @@ function HowLearnPage({ ...rest }) {
                 >
                     <FacebookIcon />
                 </a>  
+              </Grid>
+              <Grid xs={12} md={12}>
+                <div style={{fontSize: "15px", justifyContent: "center"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
               </Grid>
             </Grid>
           </div>

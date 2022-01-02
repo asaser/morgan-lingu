@@ -21,7 +21,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 // sections for this page
 import SectionDescription from "views/PresentationPage/Sections/SectionDescription.js";
 import SectionComponents from "views/PresentationPage/Sections/SectionComponents.js";
-import SectionCards from "views/PresentationPage/Sections/SectionCards.js";
+import SectionNewAds from "views/SectionsPage/Sections/MainPage/SectionNewAds.js";
 import SectionContent from "views/PresentationPage/Sections/SectionContent.js";
 import SectionSections from "views/PresentationPage/Sections/SectionSections.js";
 import SectionExamples from "views/PresentationPage/Sections/SectionExamples.js";
@@ -30,6 +30,8 @@ import SectionOverview from "views/PresentationPage/Sections/SectionOverview.js"
 import SectionPricing from "views/PresentationPage/Sections/SectionPricing.js";
 
 import presentationStyle from "assets/jss/material-kit-pro-react/views/presentationStyle.js";
+
+import logo from "assets/img/icons/iconMorganLingu64.png";
 
 const useStyles = makeStyles(presentationStyle);
 
@@ -54,7 +56,7 @@ export default function PresentationPage() {
         // {...rest}
       />
       <Parallax
-        image={require("assets/img/bg4.jpg").default}
+        image={require("assets/img/bgMainPage.jpg").default}
         className={classes.parallax}
       >
         <div className={classes.container}>
@@ -63,10 +65,12 @@ export default function PresentationPage() {
               <div className={classes.brand}>
                 <h1>
                   MorganLingu
-                  <span className={classes.proBadge}>LOGO</span>
+                  <span>
+                    <img src={logo} alt="Logo" />
+                  </span>
                 </h1>
                 <h3 className={classes.title}>
-                  Language School
+                  Szkoła językowa
                 </h3>
               </div>
             </GridItem>
@@ -74,9 +78,9 @@ export default function PresentationPage() {
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
+        <SectionNewAds />
         <SectionDescription />
         <SectionComponents />
-        <SectionCards />
         <SectionContent />
         <SectionSections />
         <SectionExamples />
@@ -103,6 +107,9 @@ export default function PresentationPage() {
                 >
                     <FacebookIcon />
                 </a>  
+              </Grid>
+              <Grid xs={12} md={12}>
+                <div style={{fontSize: "15px", justifyContent: "center"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
               </Grid>
             </Grid>
           </div>

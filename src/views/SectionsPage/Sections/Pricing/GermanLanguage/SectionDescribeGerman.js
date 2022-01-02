@@ -40,44 +40,29 @@ export default function SectionProjects({ ...rest }) {
   const classes = useStyles();
   return (
     <div className="cd-section" {...rest}>
-      <div className={classes.projects}>
+      <div className={classes.projects + " " + classes.projects4}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={6} md={6}>
+            <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
               <Card
-                raised
                 background
-                style={{ backgroundImage: `url(${office2})` }}
+                className={classes.card4}
+                style={{ backgroundImage: `url(${cardProject2})` }}
               >
-                <CardBody background>
-                  <h6 className={classes.cardCategory}>SŁÓWKA</h6>
-                  <h3 className={classes.cardTitleWhite}>
-                    Słówka zimowe
-                  </h3>
-                  <Button round color="danger">
-                    <Icon>content_copy</Icon> Otwórz
-                  </Button>
-                </CardBody>
+                <CardBody background className={classes.cardBody4} />
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={6} md={6}>
-              <Card
-                raised
-                background
-                style={{ backgroundImage: `url(${office2})` }}
-              >
-                <CardBody background>
-                  <h6 className={classes.cardCategory}>SŁÓWKA</h6>
-                  <h3 className={classes.cardTitleWhite}>
-                    Sport i rekreacja
-                  </h3>
-                  <Button round color="danger">
-                    <Icon>content_copy</Icon> Otwórz
-                  </Button>
-                </CardBody>
-              </Card>
+            <GridItem xs={12} sm={5} md={5} className={classes.mrAuto}>
+              <div style={{color: "#000"}}>
+                  <h2>Guten tag!</h2>
+                  <p>Przeprowadzasz się do nowego kraju?</p>
+                  <p>Szukasz nowej pracy?</p>
+                  <p>A może przygotowujesz się do egzaminu językowego?</p>
+                  <p>Niezależnie od powodu z nami szybko i łatwo nauczysz się JĘZYKA NIEMIECKIEGO</p>
+                </div>
             </GridItem>
           </GridContainer>
+          <hr />
         </div>
       </div>
     </div>

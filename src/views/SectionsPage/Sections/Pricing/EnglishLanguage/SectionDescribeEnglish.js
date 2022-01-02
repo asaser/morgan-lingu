@@ -53,7 +53,15 @@ export default function SectionProjects({ ...rest }) {
               </Card>
             </GridItem>
             <GridItem xs={12} sm={5} md={5} className={classes.mrAuto}>
-              <InfoArea
+              <div style={{color: "#000"}}>
+                <h2>Good morning!</h2>
+                <p>Przeprowadzasz się do nowego kraju?</p>
+                <p>Szukasz nowej pracy?</p>
+                <p>A może przygotowujesz się do egzaminu językowego?</p>
+                <p>Niezależnie od powodu z nami szybko i łatwo nauczysz się JĘZYKA ANGIELSKIEGO</p>
+              </div>
+
+              {/* <InfoArea
                 className={classes.info4}
                 title="Graphic Design"
                 description="We've created the design of the website using modern Technologies like Sketch. It was a very interesting collaboration."
@@ -73,7 +81,7 @@ export default function SectionProjects({ ...rest }) {
                 description="There is also a Fully Customizable CMS Admin Dashboard for this product."
                 icon={Dashboard}
                 iconColor="danger"
-              />
+              /> */}
             </GridItem>
           </GridContainer>
           <hr />

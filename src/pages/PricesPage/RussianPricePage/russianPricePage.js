@@ -12,6 +12,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Grid from '@material-ui/core/Grid';
 import PinDrop from "@material-ui/icons/PinDrop";
 import FacebookIcon from '@material-ui/icons/Facebook';
+
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 // core components
@@ -26,7 +27,10 @@ import Parallax from "components/Parallax/Parallax.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
 
 // Sections for this page
-import SectionSpanishPricing from "../../../views/SectionsPage/Sections/Pricing/SectionSpanishPricing";
+import SectionDescribeRussian from "../../../views/SectionsPage/Sections/Pricing/RussianLanguage/SectionDescribeRussian";
+import SectionWordRussian from "../../../views/SectionsPage/Sections/Pricing/RussianLanguage/SectionWordRussian";
+import SectionPricesLanguageRussian from "../../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguageRussian";
+
 
 const useStyles = makeStyles(landingPageStyle);
 
@@ -39,41 +43,47 @@ function HowLearnPage({ ...rest }) {
   return (
     <div>
       <Header
-        color="transparent"
+        // color="transparent"
         brand="MorganLingu"
         links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
         fixed
-        changeColorOnScroll={{
-          height: 300,
-          color: "info",
-        }}
-        {...rest}
+        color="dark"
+        // changeColorOnScroll={{
+        //   height: 300,
+        //   color: "info",
+        // }}
+        // {...rest}
       />
-      <Parallax image={require("assets/img/bg8.jpg").default} filter="dark">
+      <Parallax
+        image={require("assets/img/bgLanguageRussian.jpg").default}
+        filter="dark"
+        small
+      >
         <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>Danish</h1>
+          <GridContainer justify="center">
+            <GridItem
+              md={8}
+              sm={8}
+              className={classNames(
+                classes.mlAuto,
+                classes.mrAuto,
+                classes.textCenter
+              )}
+            >
+              <h1 className={classes.title}>Język Rosyjski</h1>
               <h4>
-                <i>"Jakiś cytat o nauce językowej"</i>
+                <i>„Век живи, век учись”</i>
+                <p><i>„Człowiek całe życie się uczy”</i></p>
               </h4>
-              <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-              >
-                <i className="fas fa-play" />
-                Może jakiś odnośnik????
-              </Button>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionSpanishPricing />
+          <SectionDescribeRussian />
+          <SectionWordRussian />
+          <SectionPricesLanguageRussian />
 
         </div>
       </div>
@@ -96,6 +106,9 @@ function HowLearnPage({ ...rest }) {
                 >
                     <FacebookIcon />
                 </a>  
+              </Grid>
+              <Grid xs={12} md={12}>
+                <div style={{fontSize: "15px", justifyContent: "center"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
               </Grid>
             </Grid>
           </div>

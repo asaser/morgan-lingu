@@ -113,6 +113,9 @@ function JobOfferPage() {
                     <FacebookIcon />
                 </a>  
               </Grid>
+              <Grid xs={12} md={12}>
+                <div style={{fontSize: "15px", justifyContent: "center"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+              </Grid>
             </Grid>
           </div>
         }

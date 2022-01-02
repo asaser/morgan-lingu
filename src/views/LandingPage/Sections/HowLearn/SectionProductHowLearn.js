@@ -51,36 +51,31 @@ export default function SectionFeatures({ ...rest }) {
               <InfoArea
                 className={classes.infoArea}
                 icon={Extension}
-                title="Zaczniesz mówićw danym języku"
-                description="The moment you use Material Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before."
+                title="Zaczniesz mówić płynnie w danym języku"
                 iconColor="primary"
               />
               <InfoArea
                 className={classes.infoArea}
                 icon={ChildFriendly}
-                title="Coś o czymś"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="W prosty sposób zrozumiesz gramatykę"
                 iconColor="primary"
               />
               <InfoArea
                 className={classes.infoArea}
                 icon={WatchLater}
-                title="Fast Prototyping"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="Będziesz przygotowany na testy językowe"
                 iconColor="primary"
               />
               <InfoArea
                 className={classes.infoArea}
                 icon={ChildFriendly}
-                title="Easy to Use"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="Poznasz kulturę i zwyczaje mieszkańców wybranego kraju"
                 iconColor="primary"
               />
               <InfoArea
                 className={classes.infoArea}
                 icon={ChildFriendly}
-                title="Easy to Use"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="Będziesz w stanie załatwić każdą sprawę w urzędzie, u lekarza itp."
                 iconColor="primary"
               />
             </GridItem>

@@ -12,6 +12,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Grid from '@material-ui/core/Grid';
 import PinDrop from "@material-ui/icons/PinDrop";
 import FacebookIcon from '@material-ui/icons/Facebook';
+
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 // core components
@@ -26,7 +27,10 @@ import Parallax from "components/Parallax/Parallax.js";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
 
 // Sections for this page
-import SectionGermanPricing from "../../../views/SectionsPage/Sections/Pricing/SectionGermanPricing";
+import SectionDescribeGerman from "../../../views/SectionsPage/Sections/Pricing/GermanLanguage/SectionDescribeGerman";
+import SectionWordGerman from "../../../views/SectionsPage/Sections/Pricing/GermanLanguage/SectionWordGerman";
+import SectionPricesLanguageGerman from "../../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguageGerman";
+
 
 const useStyles = makeStyles(landingPageStyle);
 
@@ -77,7 +81,9 @@ function HowLearnPage({ ...rest }) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <SectionGermanPricing />
+          <SectionDescribeGerman />
+          <SectionWordGerman />
+          <SectionPricesLanguageGerman />
 
         </div>
       </div>
@@ -100,6 +106,9 @@ function HowLearnPage({ ...rest }) {
                 >
                     <FacebookIcon />
                 </a>  
+              </Grid>
+              <Grid xs={12} md={12}>
+                <div style={{fontSize: "15px", justifyContent: "center"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
               </Grid>
             </Grid>
           </div>

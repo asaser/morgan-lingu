@@ -33,7 +33,7 @@ import DanishPricePage from "./pages/PricesPage/DanishPricePage/danishPricePage.
 import EnglishPricePage from "./pages/PricesPage/EnglishPricePage/englishPricePage.js";
 import GermanPricePage from "./pages/PricesPage/GermanPricePage/germanPricePage.js";
 import NorwegianPricePage from "./pages/PricesPage/NorwegianPricePage/norwegianPricePage.js";
-import SpanishPricePage from "./pages/PricesPage/SpanishPricePage/spanishPricePage.js";
+import RussianPricePage from "./pages/PricesPage/RussianPricePage/russianPricePage.js";
 import SwedishPricePage from "./pages/PricesPage/SwedishPricePage/swedishPricePage.js";
 
 import PricesLanguagePage from "./pages/PricesLanguagePage/pricesLanguagePage.js";
@@ -61,7 +61,7 @@ const App = () => {
                 <Route path="/norwegian" component={NorwegianPricePage} />
                 <Route path="/danish" component={DanishPricePage} />
                 <Route path="/swedish" component={SwedishPricePage} />
-                <Route path="/spanish" component={SpanishPricePage} />
+                <Route path="/russian" component={RussianPricePage} />
 
 
                 <Route path="/job-offer-page" component={JobOfferPage} />

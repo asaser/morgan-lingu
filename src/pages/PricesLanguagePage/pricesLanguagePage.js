@@ -26,6 +26,7 @@ import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.j
 import SectionPricesLanguageEnglish from "../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguageEnglish";
 import SectionPricesLanguageGerman from "../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguageGerman";
 import SectionPricesLanguageNorwegian from "../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguageNorwegian";
+import SectionPricesLanguageRussian from "../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguageRussian";
 
 const useStyles = makeStyles(aboutUsStyle);
 
@@ -80,6 +81,8 @@ function AboutPage() {
           <SectionPricesLanguageGerman />
           <hr style={{border: "2px solid #000"}} />
           <SectionPricesLanguageNorwegian />
+          <hr style={{border: "2px solid #000"}} />
+          <SectionPricesLanguageRussian />
         </div>
       </div>
       <Footer
@@ -101,6 +104,9 @@ function AboutPage() {
                 >
                     <FacebookIcon />
                 </a>  
+              </Grid>
+              <Grid xs={12} md={12}>
+                <div style={{fontSize: "15px", justifyContent: "center"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
               </Grid>
             </Grid>
           </div>

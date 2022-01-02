@@ -46,12 +46,11 @@ export default function SectionFeatures({ ...rest }) {
                   vertical
                   className={classes.infoArea5}
                   icon={Code}
-                  title="For Developers"
+                  title="Materiały"
                   description={
                     <p>
-                      The moment you use Material Kit, you know you’ve never
-                      felt anything like it. With a single use, this powerfull
-                      UI Kit lets you do more than ever before.
+                      Udostępniamy dużą ilość darmowych materiałów dostosowane do zainteresowań
+                      ucznów oraz poziomu jezyka
                     </p>
                   }
                   iconColor="info"
@@ -62,12 +61,11 @@ export default function SectionFeatures({ ...rest }) {
                   vertical
                   className={classes.infoArea5}
                   icon={FormatPaint}
-                  title="For Designers"
+                  title="Przełamanie barier w mówieniu"
                   description={
                     <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature will be enough.
+                      Stawiamy przede wszystkim na naukę swobodnego komunikowania się
+                      poprzez dużą ilość konwersacji na lekcjach z lektorami
                     </p>
                   }
                   iconColor="danger"
@@ -78,12 +76,11 @@ export default function SectionFeatures({ ...rest }) {
                   vertical
                   className={classes.infoArea5}
                   icon={Dashboard}
-                  title="Material-UI Grid"
+                  title="Słuchamy i piszemy"
                   description={
                     <p>
-                      Divide details about your product or agency work into
-                      parts. Write a few lines about each one. A paragraph
-                      describing a feature will be enough.
+                      Nauka poprzez słuchanie podcastów, muzyki, kanałów na YouTube 
+                      oraz poprzez pisanie różnorodnych dłuższych i krótszych przydatnych tekstów
                     </p>
                   }
                   iconColor="primary"
@@ -96,12 +93,11 @@ export default function SectionFeatures({ ...rest }) {
                   vertical
                   className={classes.infoArea5}
                   icon={ViewCarousel}
-                  title="Example Pages Included"
+                  title="Proste tłumaczenie"
                   description={
                     <p>
-                      The moment you use Material Kit, you know you’ve never
-                      felt anything like it. With a single use, this powerfull
-                      UI Kit lets you do more than ever before.
+                      Wyjaśniamy przejrzyście gramatykę oraz inne, nurtujące Cię zagadnienia,
+                      aż staną się proste i zrozumiałe
                     </p>
                   }
                 />
@@ -111,12 +107,11 @@ export default function SectionFeatures({ ...rest }) {
                   vertical
                   className={classes.infoArea5}
                   icon={AccessTime}
-                  title="Save Time"
+                  title="Motywacja"
                   description={
                     <p>
-                      The moment you use Material Kit, you know you’ve never
-                      felt anything like it. With a single use, this powerfull
-                      UI Kit lets you do more than ever before.
+                      Motywujemy Cię do samodzielnej nauki poprzez ciekawe zadania domowe,
+                      dodatkowe materiały, udostępniane filmy, muzykę itp.
                     </p>
                   }
                 />
@@ -126,12 +121,11 @@ export default function SectionFeatures({ ...rest }) {
                   vertical
                   className={classes.infoArea5}
                   icon={AttachMoney}
-                  title="Save Money"
+                  title="Indywidualne podejście"
                   description={
                     <p>
-                      The moment you use Material Kit, you know you’ve never
-                      felt anything like it. With a single use, this powerfull
-                      UI Kit lets you do more than ever before.
+                      Rozumiemy, że każdy potrzebuje innych metod nauki (metody wzrokowe,
+                      słuchowe, kinestetyczne) i dopasowujemy je do Ciebie
                     </p>
                   }
                 />
