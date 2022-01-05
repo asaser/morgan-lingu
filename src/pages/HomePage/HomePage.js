@@ -19,15 +19,15 @@ import Button from "components/CustomButtons/Button.js";
 import PinDrop from "@material-ui/icons/PinDrop";
 import FacebookIcon from '@material-ui/icons/Facebook';
 // sections for this page
-import SectionDescription from "views/PresentationPage/Sections/SectionDescription.js";
-import SectionComponents from "views/PresentationPage/Sections/SectionComponents.js";
 import SectionNewAds from "views/SectionsPage/Sections/MainPage/SectionNewAds.js";
-import SectionContent from "views/PresentationPage/Sections/SectionContent.js";
-import SectionSections from "views/PresentationPage/Sections/SectionSections.js";
-import SectionExamples from "views/PresentationPage/Sections/SectionExamples.js";
-import SectionFreeDemo from "views/PresentationPage/Sections/SectionFreeDemo.js";
-import SectionOverview from "views/PresentationPage/Sections/SectionOverview.js";
-import SectionPricing from "views/PresentationPage/Sections/SectionPricing.js";
+import SectionDescription from "views/SectionsPage/Sections/MainPage/SectionDescription.js";
+import SectionComponents from "views/SectionsPage/Sections/MainPage/SectionComponents.js";
+import SectionContent from "views/SectionsPage/Sections/MainPage/SectionContent.js";
+import SectionSections from "views/SectionsPage/Sections/MainPage/SectionSections.js";
+import SectionExamples from "views/SectionsPage/Sections/MainPage/SectionExamples.js";
+// import SectionFreeDemo from "views/PresentationPage/Sections/SectionFreeDemo.js";
+// import SectionOverview from "views/PresentationPage/Sections/SectionOverview.js";
+// import SectionPricing from "views/PresentationPage/Sections/SectionPricing.js";
 
 import presentationStyle from "assets/jss/material-kit-pro-react/views/presentationStyle.js";
 
@@ -84,10 +84,10 @@ export default function PresentationPage() {
         <SectionContent />
         <SectionSections />
         <SectionExamples />
-        <SectionFreeDemo />
-        <SectionOverview />
+        {/* <SectionFreeDemo />
+        <SectionOverview /> */}
       </div>
-      <SectionPricing />
+      {/* <SectionPricing /> */}
       <Footer
         content={
           <div style={{marginTop: "30px"}}>
