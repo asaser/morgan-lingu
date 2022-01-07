@@ -8,6 +8,13 @@ import Dashboard from "@material-ui/icons/Dashboard";
 import ViewCarousel from "@material-ui/icons/ViewCarousel";
 import AccessTime from "@material-ui/icons/AccessTime";
 import AttachMoney from "@material-ui/icons/AttachMoney";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
+import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver';
+import HeadsetIcon from '@material-ui/icons/Headset';
+import GTranslateIcon from '@material-ui/icons/GTranslate';
+import SchoolIcon from '@material-ui/icons/School';
+import HighlightIcon from '@material-ui/icons/Highlight';
+
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -24,7 +31,6 @@ export default function SectionFeatures({ ...rest }) {
     <div className="cd-section" {...rest}
       style={{paddingBottom: "50px"}}
     >
-      {/* Feature 5 START */}
       <div
         className={classes.featuresHowLearn}
       >
@@ -45,10 +51,10 @@ export default function SectionFeatures({ ...rest }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={Code}
+                  icon={MenuBookIcon}
                   title="Materiały"
                   description={
-                    <p>
+                    <p style={{fontSize: '1.2em'}}>
                       Udostępniamy dużą ilość darmowych materiałów dostosowane do zainteresowań
                       ucznów oraz poziomu jezyka
                     </p>
@@ -60,10 +66,10 @@ export default function SectionFeatures({ ...rest }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={FormatPaint}
+                  icon={RecordVoiceOverIcon}
                   title="Przełamanie barier w mówieniu"
                   description={
-                    <p>
+                    <p style={{fontSize: '1.2em'}}>
                       Stawiamy przede wszystkim na naukę swobodnego komunikowania się
                       poprzez dużą ilość konwersacji na lekcjach z lektorami
                     </p>
@@ -75,10 +81,10 @@ export default function SectionFeatures({ ...rest }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={Dashboard}
+                  icon={HeadsetIcon}
                   title="Słuchamy i piszemy"
                   description={
-                    <p>
+                    <p style={{fontSize: '1.2em'}}>
                       Nauka poprzez słuchanie podcastów, muzyki, kanałów na YouTube 
                       oraz poprzez pisanie różnorodnych dłuższych i krótszych przydatnych tekstów
                     </p>
@@ -92,10 +98,10 @@ export default function SectionFeatures({ ...rest }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={ViewCarousel}
+                  icon={GTranslateIcon}
                   title="Proste tłumaczenie"
                   description={
-                    <p>
+                    <p style={{fontSize: '1.2em'}}>
                       Wyjaśniamy przejrzyście gramatykę oraz inne, nurtujące Cię zagadnienia,
                       aż staną się proste i zrozumiałe
                     </p>
@@ -106,10 +112,10 @@ export default function SectionFeatures({ ...rest }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={AccessTime}
+                  icon={SchoolIcon}
                   title="Motywacja"
                   description={
-                    <p>
+                    <p style={{fontSize: '1.2em'}}>
                       Motywujemy Cię do samodzielnej nauki poprzez ciekawe zadania domowe,
                       dodatkowe materiały, udostępniane filmy, muzykę itp.
                     </p>
@@ -120,10 +126,10 @@ export default function SectionFeatures({ ...rest }) {
                 <InfoArea
                   vertical
                   className={classes.infoArea5}
-                  icon={AttachMoney}
+                  icon={HighlightIcon}
                   title="Indywidualne podejście"
                   description={
-                    <p>
+                    <p style={{fontSize: '1.2em'}}>
                       Rozumiemy, że każdy potrzebuje innych metod nauki (metody wzrokowe,
                       słuchowe, kinestetyczne) i dopasowujemy je do Ciebie
                     </p>
@@ -134,7 +140,6 @@ export default function SectionFeatures({ ...rest }) {
           </div>
         </GridContainer>
       </div>
-      {/* Feature 5 END */}
     </div>
   );
 }

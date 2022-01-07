@@ -30,6 +30,7 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPag
 import SectionProductHowLearn from "../../views/LandingPage/Sections/HowLearn/SectionProductHowLearn.js";
 import SectionWorkHowLearn from "../../views/LandingPage/Sections/HowLearn/SectionWorkHowLearn.js";
 import SectionFeaturesHowLearn from "../../views/LandingPage/Sections/HowLearn/SectionFeaturesHowLearn.js"; 
+import SectionFooter from "views/SectionsPage/Sections/Footer/SectionFooter.js";
 
 import productStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/productStyle.js";
 
@@ -84,15 +85,30 @@ function HowLearnPage({ ...rest }) {
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={8} md={8}>
-              <h2 style={{color: "#000", display: "flex", justifyContent: "center", alignItems: "center"}}>Dlaczego MorganLingu?</h2>
-              <h5 style={{color: "#000", fontSize: "1.3em"}}>
-                U nas NIE uczysz się tak jak w zwykłej szkole metodą 3Z (Zakup, Zdaj, Zapomnij),
-                NIE będziesz mieć nudnych lekcji polegających tylko na czytaniu z podręcznika.
-                <br />
-                W MorganLingu stawiamy na różnorodność form nauki, w taki sposób, w jaki stykałbyś się z nimi
-                podczas życia codziennego oraz zawodowego żyjąc w danym kraju.
-                Nasze metody nauki dostosowane są do każdego, niezależnie od wieku oraz doświadczenia językowego.
-              </h5>
+              <h2 style={{
+                color: "#000", 
+                display: "flex", 
+                justifyContent: "center", 
+                alignItems: "center", 
+                fontWeight: 'bold', 
+                marginTop: '50px'
+              }}>Dlaczego&nbsp;<span style={{color: '#000080'}}>MorganLingu</span>?</h2>
+
+              <div style={{color: "#000"}}>
+                <p style={{fontWeight: '400', fontSize: '1.5em', lineHeight: '140%'}}>
+                  U nas <span style={{color: "red", fontWeight: 'bold'}}>NIE</span> uczysz się tak jak w zwykłej szkole metodą 3Z <i>(Zakuj, Zdaj, Zapomnij)</i>,
+                  <span style={{color: "red", fontWeight: 'bold'}}> NIE</span> będziesz mieć nudnych lekcji polegających tylko na czytaniu z podręcznika.
+                </p>
+
+                <hr />
+
+                <p style={{fontWeight: '400', fontSize: '1.45em', lineHeight: '140%'}}>
+                  W <span style={{fontWeight: 'bold'}}>MorganLingu</span> stawiamy na różnorodność form nauki, w taki sposób, 
+                  w jaki stykałbyś się z nimi podczas <span style={{color: "#000080", fontWeight: 'bold'}}>życia codziennego</span> 
+                  oraz <span style={{color: "#000080", fontWeight: 'bold'}}>zawodowego</span> żyjąc w danym kraju. Nasze metody nauki 
+                  dostosowane są do każdego, niezależnie od wieku oraz doświadczenia językowego.
+                </p>
+              </div>
             </GridItem>
           </GridContainer>
 
@@ -101,33 +117,9 @@ function HowLearnPage({ ...rest }) {
           <SectionProductHowLearn />
         </div>
       </div>
-      <Footer
-        content={
-          <div style={{marginTop: "30px"}}>
-            <Grid container>
-              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
-                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania - zadzwoń do nas!</p>
-                <p style={{fontSize: "1.5em"}}>+48 604 678 347</p>
-              </Grid>
-              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
-                <p style={{fontSize: "1.5em"}}>Lub napisz!</p>
-                <p style={{fontSize: "1.5em"}}>morganlingu@gmail.com</p>
-              </Grid>
-              <Grid p xs={6} md={2}>
-                <a
-                  href="https://www.facebook.com/morganLingu"
-                  target="_blank"
-                >
-                    <FacebookIcon />
-                </a>  
-              </Grid>
-              <Grid xs={12} md={12}>
-                <div style={{fontSize: "15px", justifyContent: "center"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-              </Grid>
-            </Grid>
-          </div>
-        }
-      />
+
+      <SectionFooter />
+
     </div>
   );
 }
