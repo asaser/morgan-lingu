@@ -92,14 +92,14 @@ export default function HeaderLinks(props) {
     <>
     <List>
 
-        <ListItem className={classes.listItem}>
-          <Link to="/" className={classes.dropdownLink}>
-            STRONA GŁÓWNA
-          </Link>
-        </ListItem>
+    <ListItem className={classes.listItem}>
+      <Link to="/" className={classes.dropdownLink} style={{fontSize: '16px', fontWeight: '500'}}>
+        STRONA GŁÓWNA
+      </Link>
+    </ListItem>
 
     <ListItem className={classes.listItem}>
-      <Link to="/price-language-page" className={classes.dropdownLink}>
+      <Link to="/price-language-page" className={classes.dropdownLink} style={{fontSize: '16px', fontWeight: '500'}}>
         CENNIK
       </Link>
     </ListItem>
@@ -156,13 +156,13 @@ export default function HeaderLinks(props) {
       </ListItem>
 
     <ListItem className={classes.listItem}>
-      <Link to="/how-learn-page" className={classes.dropdownLink}>
+      <Link to="/how-learn-page" className={classes.dropdownLink} style={{fontSize: '16px', fontWeight: '500'}}>
         JAK UCZYMY
       </Link>
     </ListItem>
 
     <ListItem className={classes.listItem}>
-      <Link to="/about-page" className={classes.dropdownLink}>
+      <Link to="/about-page" className={classes.dropdownLink} style={{fontSize: '16px', fontWeight: '500'}}>
         O NAS
       </Link>
     </ListItem>
@@ -190,12 +190,12 @@ export default function HeaderLinks(props) {
       </ListItem> */}
 
     <ListItem className={classes.listItem}>
-      <Link to="/contact-page" className={classes.dropdownLink}>
+      <Link to="/contact-page" className={classes.dropdownLink} style={{fontSize: '16px', fontWeight: '500'}}>
         KONTAKT
       </Link>
     </ListItem>
 
-      <ListItem className={classes.listItem}>
+  {/* <ListItem className={classes.listItem}>
 
         <CustomDropdown
           noLiPadding
@@ -225,8 +225,8 @@ export default function HeaderLinks(props) {
             </a>,
           ]}
         />
-      </ListItem>
-      <ListItem className={classes.listItem}>
+      </ListItem> */}
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
@@ -296,8 +296,8 @@ export default function HeaderLinks(props) {
             </Link>,
           ]}
         />
-      </ListItem>
-      <ListItem className={classes.listItem}>
+      </ListItem> */}
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
@@ -351,7 +351,7 @@ export default function HeaderLinks(props) {
             </Link>,
           ]}
         />
-      </ListItem>
+      </ListItem> */}
 
 
 

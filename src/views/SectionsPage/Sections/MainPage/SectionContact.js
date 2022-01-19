@@ -23,35 +23,33 @@ const useStyles = makeStyles(styles);
 export default function SectionPreFooter() {
   const classes = useStyles();
   return (
+    <div>
       <div
         className={classNames(
-          classes.subscribeLine,
-          classes.subscribeLineImage
+          classes.textCenter,
         )}
       >
         <div className={classes.container}>
-          <GridContainer>
-            <GridItem
-              xs={12}
-              sm={6}
-              md={6}
-              className={classNames(classes.mlAuto, classes.mrAuto)}
-            >
-              <div className={classes.textCenter}>
-                <h3 className={classes.title}>Kontakt</h3>
-              </div>
 
-              <div>
-                <a
-                  href="/contact-page"
-                  target="_blank"
-                >
-                  <Button block round type="button" color="success">Skontaktuj się z nami</Button>
-                </a>
-              </div>
+        <hr style={{ border: '2px solid #000', margin: '20px 50px 0px 50px' }} />
+          <GridContainer justify="center">
+            <GridItem md={12}>
+              <h4 className={classes.title}>Naciśnij aby skontaktować się z nami</h4>
             </GridItem>
+
+            <div>
+              <a
+                href="/contact-page"
+                target="_blank"
+              >
+              <Button variant="outlined">Kontakt</Button>
+              </a>
+            </div>
           </GridContainer>
+        <hr style={{ border: '2px solid #000', margin: '20px 50px 20px 50px' }} />
+
         </div>
-      </div> 
+      </div>
+    </div>
   );
 }

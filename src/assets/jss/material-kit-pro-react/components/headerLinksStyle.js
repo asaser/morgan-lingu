@@ -61,8 +61,8 @@ const headerLinksStyle = (theme) => ({
     color: "inherit",
     position: "relative",
     padding: "0.9375rem",
-    fontWeight: "400",
-    fontSize: "12px",
+    fontWeight: "500",
+    fontSize: "16px",
     textTransform: "uppercase",
     lineHeight: "20px",
     textDecoration: "none",
@@ -81,9 +81,6 @@ const headerLinksStyle = (theme) => ({
     },
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 30px)",
-      marginLeft: "15px",
-      marginBottom: "8px",
-      marginTop: "8px",
       textAlign: "left",
       "& > span:first-child": {
         justifyContent: "flex-start",

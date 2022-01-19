@@ -23,7 +23,7 @@ import SectionNewAds from "views/SectionsPage/Sections/MainPage/SectionNewAds.js
 import SectionDescription from "views/SectionsPage/Sections/MainPage/SectionDescription.js";
 import SectionComponents from "views/SectionsPage/Sections/MainPage/SectionComponents.js";
 import SectionContent from "views/SectionsPage/Sections/MainPage/SectionContent.js";
-import SectionSections from "views/SectionsPage/Sections/MainPage/SectionSections.js";
+import SectionContact from "views/SectionsPage/Sections/MainPage/SectionContact.js";
 import SectionExamples from "views/SectionsPage/Sections/MainPage/SectionExamples.js";
 // import SectionFreeDemo from "views/PresentationPage/Sections/SectionFreeDemo.js";
 // import SectionOverview from "views/PresentationPage/Sections/SectionOverview.js";
@@ -32,6 +32,9 @@ import SectionExamples from "views/SectionsPage/Sections/MainPage/SectionExample
 import presentationStyle from "assets/jss/material-kit-pro-react/views/presentationStyle.js";
 
 import logo from "assets/img/icons/iconMorganLingu64.png";
+
+import SectionFooter from "views/SectionsPage/Sections/Footer/SectionFooter.js";
+
 
 const useStyles = makeStyles(presentationStyle);
 
@@ -55,6 +58,7 @@ export default function PresentationPage() {
         // }}
         // {...rest}
       />
+
       <Parallax
         image={require("assets/img/bgMainPage.jpg").default}
         className={classes.parallax}
@@ -65,7 +69,13 @@ export default function PresentationPage() {
               <div className={classes.brand}>
                 <h1>
                   MorganLingu
-                  <span>
+                  <span style={{
+                    backgroundColor: '#fff',
+                    borderRadius: '20%',
+                    marginLeft: '15px',
+                    padding: '0px 5px 5px 5px'
+                    }}
+                  >
                     <img src={logo} alt="Logo" />
                   </span>
                 </h1>
@@ -81,40 +91,16 @@ export default function PresentationPage() {
         <SectionNewAds />
         <SectionDescription />
         <SectionComponents />
-        <SectionContent />
-        <SectionSections />
+        {/* <SectionContent /> */}
+        <SectionContact />
         <SectionExamples />
         {/* <SectionFreeDemo />
         <SectionOverview /> */}
       </div>
       {/* <SectionPricing /> */}
-      <Footer
-        content={
-          <div style={{marginTop: "30px"}}>
-            <Grid container>
-              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
-                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania - zadzwoń do nas!</p>
-                <p style={{fontSize: "1.5em"}}>+48 604 678 347</p>
-              </Grid>
-              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
-                <p style={{fontSize: "1.5em"}}>Lub napisz!</p>
-                <p style={{fontSize: "1.5em"}}>morganlingu@gmail.com</p>
-              </Grid>
-              <Grid p xs={6} md={2}>
-                <a
-                  href="https://www.facebook.com/morganLingu"
-                  target="_blank"
-                >
-                    <FacebookIcon />
-                </a>  
-              </Grid>
-              <Grid xs={12} md={12}>
-                <div style={{fontSize: "15px", justifyContent: "center"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-              </Grid>
-            </Grid>
-          </div>
-        }
-      />
+
+      <SectionFooter />
+
     </div>
   );
 }

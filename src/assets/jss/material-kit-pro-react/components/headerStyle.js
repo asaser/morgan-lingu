@@ -16,6 +16,9 @@ import {
   hexToRgb,
 } from "assets/jss/material-kit-pro-react.js";
 
+import logo from "assets/img/icons/iconMorganLingu64White.png";
+
+
 const headerStyle = (theme) => ({
   appBar: {
     display: "flex",
@@ -59,10 +62,15 @@ const headerStyle = (theme) => ({
       ...defaultFont,
       minWidth: "unset",
       lineHeight: "30px",
-      fontSize: "18px",
+      fontSize: "20px",
+      fontWeight: 'bold',
       borderRadius: "3px",
       textTransform: "none",
       whiteSpace: "nowrap",
+      backgroundImage: `url(${logo})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      padding: '8px',
       color: "inherit",
       "&:hover,&:focus": {
         color: "inherit",
@@ -70,6 +78,7 @@ const headerStyle = (theme) => ({
       },
     },
   },
+
   appResponsive: {
     margin: "20px 10px",
     marginTop: "0px",

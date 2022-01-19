@@ -13,7 +13,11 @@ import shareButtonImage from "assets/img/assets-for-demo/presentationViewSection
 import cardImage from "assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg";
 import twitterImage from "assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg";
 import iconsImage from "assets/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg";
-import repostImage from "assets/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg";
+// import repostImage from "assets/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg";
+import FlagGreatBritain from "assets/img/FlagsLanguage/FlagGreatBritain.png";
+import FlagNorwegian from "assets/img/FlagsLanguage/FlagNorwegian.png";
+import FlagGerman from "assets/img/FlagsLanguage/FlagGerman.png";
+
 
 import Button from "components/CustomButtons/Button.js";
 
@@ -65,17 +69,17 @@ export default function SectionComponents() {
                 className={classes.cardImage}
               />
               <img
-                src={twitterImage}
+                src={FlagGerman}
                 alt="macbook"
                 className={classes.twitterImage}
               />
               <img
-                src={iconsImage}
+                src={FlagNorwegian}
                 alt="macbook"
                 className={classes.iconsImage}
               />
               <img
-                src={repostImage}
+                src={FlagGreatBritain}
                 alt="macbook"
                 className={classes.repostImage}
               />

@@ -36,7 +36,16 @@ export default function SectionPreFooter() {
             <GridItem md={12}>
               <h4 className={classes.title}>Naciśnij aby skontaktować się z nami</h4>
             </GridItem>
-            <Button variant="outlined">Kontakt</Button>
+
+            <div>
+              <a
+                href="/contact-page"
+                target="_blank"
+              >
+              <Button variant="outlined">Kontakt</Button>
+              </a>
+            </div>
+            
           </GridContainer>
         <hr style={{ border: '2px solid #000', margin: '20px 50px 20px 50px' }} />
 

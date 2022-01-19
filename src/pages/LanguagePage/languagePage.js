@@ -38,6 +38,7 @@ import SectionOffice from "views/AboutUsPage/Sections/SectionOffice.js";
 import SectionContact from "views/AboutUsPage/Sections/SectionContact.js";
 
 import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.js";
+import SectionFooter from "views/SectionsPage/Sections/Footer/SectionFooter.js";
 
 const useStyles = makeStyles(aboutUsStyle);
 
@@ -93,33 +94,9 @@ function LanguagePage() {
           <SectionContact />
         </div>
       </div>
-      <Footer
-        content={
-          <div style={{marginTop: "30px"}}>
-            <Grid container>
-              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
-                <p style={{fontSize: "1.5em"}}>Jeśli masz pytania - zadzwoń do nas!</p>
-                <p style={{fontSize: "1.5em"}}>+48 604 678 347</p>
-              </Grid>
-              <Grid p xs={12} md={5} style={{fontWeight: "bold"}}>
-                <p style={{fontSize: "1.5em"}}>Lub napisz!</p>
-                <p style={{fontSize: "1.5em"}}>morganlingu@gmail.com</p>
-              </Grid>
-              <Grid p xs={6} md={2}>
-                <a
-                  href="https://www.facebook.com/morganLingu"
-                  target="_blank"
-                >
-                    <FacebookIcon />
-                </a>  
-              </Grid>
-              <Grid xs={12} md={12}>
-                <div style={{fontSize: "15px", justifyContent: "center"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-              </Grid>
-            </Grid>
-          </div>
-        }
-      />
+
+      <SectionFooter />
+      
     </div>
   );
 }
