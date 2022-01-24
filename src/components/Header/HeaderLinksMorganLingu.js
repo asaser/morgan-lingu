@@ -149,6 +149,11 @@ export default function HeaderLinks(props) {
             Rosyjski
           </Link>,
 
+          <Link to="/polish" className={classes.dropdownLink}>
+            {/* <Layers className={classes.dropdownIcons} /> */}
+            Polski
+          </Link>,
+
 
 
         ]}
@@ -167,33 +172,46 @@ export default function HeaderLinks(props) {
       </Link>
     </ListItem>
 
-
-      {/* <ListItem className={classes.listItem}>
-        <Link style={{color: "red", paddingLeft: "25px"}} to="/language-test-page">
-          <AccountBalance className={classes.dropdownIcons} /> 
-          Language Test
-        </Link>
-    </ListItem> */}
-
-      {/* <ListItem className={classes.listItem}>
-        <Link style={{color: "red", paddingLeft: "25px"}} to="/prices-page">
-          <AccountBalance className={classes.dropdownIcons} /> 
-          Prices
-        </Link>
-      </ListItem> */}
-
-      {/* <ListItem className={classes.listItem}>
-        <Link style={{color: "red", paddingLeft: "25px"}} to="/job-offer-page">
-          <AccountBalance className={classes.dropdownIcons} /> 
-          Job Offert
-        </Link>
-      </ListItem> */}
-
     <ListItem className={classes.listItem}>
       <Link to="/contact-page" className={classes.dropdownLink} style={{fontSize: '16px', fontWeight: '500'}}>
         KONTAKT
       </Link>
     </ListItem>
+
+    <List className={classes.list + " " + classes.mlAuto}>
+      <ListItem className={classes.listItem}>
+          <Button
+            color="transparent"
+            href="https://www.facebook.com/morganLingu"
+            target="_blank"
+            className={classes.navLink + " " + classes.navLinkJustIcon}
+          >
+            <i className={"fab fa-facebook"} />
+          </Button>
+        </ListItem>
+
+      {/* <ListItem className={classes.listItem}>
+        <Button
+          color="transparent"
+          href="https://twitter.com/CreativeTim?ref=creativetim"
+          target="_blank"
+          className={classes.navLink + " " + classes.navLinkJustIcon}
+        >
+          <i className={"fab fa-twitter"} />
+        </Button>
+      </ListItem> */}
+
+      {/* <ListItem className={classes.listItem}>
+        <Button
+          color="transparent"
+          href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+          target="_blank"
+          className={classes.navLink + " " + classes.navLinkJustIcon}
+        >
+          <i className={"fab fa-instagram"} />
+        </Button>
+      </ListItem> */}
+    </List>
 
   {/* <ListItem className={classes.listItem}>
 
@@ -225,8 +243,8 @@ export default function HeaderLinks(props) {
             </a>,
           ]}
         />
-      </ListItem> */}
-      {/* <ListItem className={classes.listItem}>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
@@ -296,8 +314,8 @@ export default function HeaderLinks(props) {
             </Link>,
           ]}
         />
-      </ListItem> */}
-      {/* <ListItem className={classes.listItem}>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
@@ -351,7 +369,7 @@ export default function HeaderLinks(props) {
             </Link>,
           ]}
         />
-      </ListItem> */}
+      </ListItem>
 
 
 
@@ -386,7 +404,7 @@ export default function HeaderLinks(props) {
                     <i className={"fab fa-instagram"} />
                   </Button>
                 </ListItem>
-              </List>
+              </List> */}
 
       </List>
       </>

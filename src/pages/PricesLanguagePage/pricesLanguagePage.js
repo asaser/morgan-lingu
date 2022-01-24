@@ -27,6 +27,8 @@ import SectionPricesLanguageEnglish from "../../views/SectionsPage/Sections/Pric
 import SectionPricesLanguageGerman from "../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguageGerman";
 import SectionPricesLanguageNorwegian from "../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguageNorwegian";
 import SectionPricesLanguageRussian from "../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguageRussian";
+import SectionPricesLanguagePolish from "../../views/SectionsPage/Sections/PricesLanguage/SectionPricesLanguagePolish";
+
 import SectionFooter from "views/SectionsPage/Sections/Footer/SectionFooter.js";
 
 const useStyles = makeStyles(aboutUsStyle);
@@ -84,6 +86,10 @@ function AboutPage() {
           <SectionPricesLanguageNorwegian />
           <hr style={{border: "2px solid #000"}} />
           <SectionPricesLanguageRussian />
+          <hr style={{border: "2px solid #000"}} />
+          <SectionPricesLanguageRussian />
+          <hr style={{border: "2px solid #000"}} />
+          <SectionPricesLanguagePolish />
         </div>
       </div>
 

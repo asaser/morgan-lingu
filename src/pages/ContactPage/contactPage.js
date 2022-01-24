@@ -1,26 +1,27 @@
-    // import React from 'react';
 
-    // const ContactPage = () => {
-    //     return (
-    //         <h1>ContactPage</h1>
-    //     )
-    // }
-
-    // export default ContactPage;
 /*eslint-disable*/
-import React from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Grid from '@material-ui/core/Grid';
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+import Card from '@material-ui/core/Card';
+
+// components
+import SnackbarContent from "components/Snackbar/SnackbarContent.js";
+
+
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
 import EmailIcon from '@material-ui/icons/Email';
+import Check from "@material-ui/icons/Check";
+
 import LanguageIcon from '@material-ui/icons/Language';
 import BusinessCenter from "@material-ui/icons/BusinessCenter";
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -52,6 +53,45 @@ function ContactPage() {
     document.body.scrollTop = 0;
   });
   const classes = useStyles();
+
+  const [sendForm, setSendForm] = useState(false);
+
+  // emailJS
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_uk0lq78', 'template_8t5rp0l', form.current, 'user_vyHWNn3S1Lr15SW3FTE8q')
+      .then((result) => {
+          console.log('SUCCES!', result.text);
+          setSendForm(true);
+      }, (error) => {
+          console.log('FAILED',error.text);
+      });
+
+      form.current.reset();
+  };
+
+
+  // success alert
+
+    const renderAlert = () => (
+      <SnackbarContent
+          message={
+            <span>
+              <b style={{fontSize: '20px'}}>Wiadomość wysłana: </b>
+              Odezwiemy się do Ciebie jak najszybciej
+            </span>
+          }
+          close
+          color="success"
+          icon={Check}
+      />
+    )
+
+
   return (
     <div>
       <Header
@@ -87,73 +127,98 @@ function ContactPage() {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.contactContent}>
           <div className={classes.container}>
+
+          {sendForm && renderAlert()}
+
+          <h2 className={classes.title}>Czekamy na twoją wiadomość</h2>
             <GridContainer>
-            <h2 className={classes.title}>Czekamy na twoją wiadomość</h2>
               <GridItem md={6} sm={6}>
-                <form>
-                  <CustomInput
-                    labelText="Imię"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
+
+                <form ref={form} onSubmit={sendEmail} style={{display: 'flex', flexDirection: 'column'}}>
+
+                <FormControl>
+                  <InputLabel htmlFor="name-component">Imię</InputLabel>
+                  <Input 
+                    id="name-component"
+                    aria-describedby="name-component-text" 
+                    type="text" 
+                    name="to_name" 
+                    style={{ marginBottom: '35px' }}
                   />
-                  <CustomInput
-                    labelText="Email"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
+                </FormControl>
+
+                <FormControl>
+                  <InputLabel htmlFor="email-component">Adres email</InputLabel>
+                  <Input 
+                    id="email-component"
+                    aria-describedby="email-component-text" 
+                    type="email"
+                    name="to_email" 
+                    style={{ marginBottom: '35px' }}
                   />
-                  <CustomInput
-                    labelText="Numer Telefonu"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
+                </FormControl>
+
+                <FormControl>
+                  <InputLabel htmlFor="phone-component">Numer Telefonu (opcjonalnie)</InputLabel>
+                  <Input 
+                    id="phone-component"
+                    aria-describedby="phone-component-text" 
+                    type="text" 
+                    name="telefon_number" 
+                    style={{ marginBottom: '35px' }}
                   />
-                  <CustomInput
-                    labelText="Wiadomość"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                    inputProps={{
-                      multiline: true,
-                      rows: 6,
-                    }}
+                </FormControl>
+
+                <FormControl>
+                  <InputLabel htmlFor="text-component">Treść wiadomości</InputLabel>
+                  <Input 
+                    id="text-component"
+                    aria-describedby="text-component-text" 
+                    type="text" 
+                    name="message" 
+                    multiline
+                    rows={10}
+                    style={{ marginBottom: '35px'}}
                   />
+                </FormControl>
+
                   <div className={classes.textCenter}>
-                    <Button variant="contained" size="large" style={{backgroundColor: '#000080'}}>
+                    <Button type="submit" value="Send" variant="contained" size="large" style={{backgroundColor: '#000080'}}>
                         <span style={{color: '#fff'}}>Wyślij</span>
                     </Button>
                   </div>
                 </form>
               </GridItem>
+
               <GridItem md={4} sm={4} className={classes.mlAuto}>
-              <h2 className={classes.title} style={{display: 'flex', justifyContent: 'center'}}>Kontakt</h2>
 
-                <InfoArea
-                  className={classes.info}
-                  title="+48 604 678 347"
-                  icon={Phone}
-                  iconColor="primary"
-                />
-                <InfoArea
-                  className={classes.info}
-                  title="morganlingu@gmail.com"
-                  icon={EmailIcon}
-                  iconColor="primary"
-                />
+                <Card style={{height: '70%', width: '400px', backgroundColor: 'rgba(240, 240, 240, 1)', boxShadow: '0 10px 10px 0 rgba(0,0,0,0.2)'}}>
 
-                <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
-                  <a
-                    href="https://www.facebook.com/morganLingu"
-                    target="_blank"
-                  >
-                      <FacebookIcon style={{transform: 'scale(2)'}} />
-                  </a>  
-                </div>
+                  <h2 className={classes.title} style={{display: 'flex', justifyContent: 'center'}}>Kontakt</h2>
+
+                    <InfoArea
+                      className={classes.info}
+                      title="+48 604 678 347"
+                      icon={Phone}
+                      iconColor="primary"
+                    />
+                    <InfoArea
+                      className={classes.info}
+                      title="morganlingu@gmail.com"
+                      icon={EmailIcon}
+                      iconColor="primary"
+                    />
+
+                    <div style={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
+                      <a
+                        href="https://www.facebook.com/morganLingu"
+                        target="_blank"
+                      >
+                          <FacebookIcon style={{transform: 'scale(2)'}} />
+                      </a>  
+                    </div>
+
+                </Card>
 
               </GridItem>
             </GridContainer>

@@ -71,43 +71,51 @@ const componentsStyle = (theme) => ({
   },
   shareButton: {
     [theme.breakpoints.down("md")]: {
-      top: "12%",
+      left: "17%",
+      top: "27%",
     },
     [theme.breakpoints.down("sm")]: {
-      top: "7%",
+      left: "-17%",
+      top: "27%",
     },
     ...reusableStylesForImgs,
-    left: "3%",
-    top: "-3%",
-    height: "25px",
-    WebkitAnimation: "Floatingy 11s ease-in-out infinite",
+    left: "50%",
+    top: "40%",
+    height: "40px",
+    WebkitAnimation: "Floatingy 16s ease-in-out infinite",
   },
   cardImage: {
     [theme.breakpoints.down("md")]: {
-      top: "-2%",
+      top: "20%",
       left: "65%",
     },
     [theme.breakpoints.down("sm")]: {
-      top: "-2%",
+      top: "20%",
     },
     ...reusableStylesForImgs,
     left: "35%",
-    top: "2%",
-    height: "125px",
-    borderRadius: "6px",
+    top: "20%",
+    height: "50px",
     WebkitAnimation: "Floatingy 18s ease-in-out infinite",
   },
   twitterImage: {
     [theme.breakpoints.down("md")]: {
-      display: "none",
+      top: "20%",
+      left: "65%",
+    },
+    [theme.breakpoints.down("sm")]: {
+      top: "20%",
     },
     ...reusableStylesForImgs,
-    left: "90%",
-    top: "11%",
-    height: "90px",
-    borderRadius: "2px",
-    WebkitAnimation: "Floatingy 10s ease-in-out infinite",
+    left: "10%",
+    top: "30%",
+    height: "50px",
+    WebkitAnimation: "Floatingy 20s ease-in-out infinite",
   },
+
+
+
+
   iconsImage: {
     [theme.breakpoints.down("md")]: {
       left: "47%",
@@ -118,20 +126,22 @@ const componentsStyle = (theme) => ({
       top: "37%",
     },
     ...reusableStylesForImgs,
-    left: "70%",
-    top: "67%",
+    left: "55%",
+    top: "60%",
     height: "40px",
     WebkitAnimation: "Floatingx 16s ease-in-out infinite",
   },
+
+
+
   repostImage: {
     [theme.breakpoints.down("md")]: {
       top: "54%",
     },
     ...reusableStylesForImgs,
     left: "0%",
-    top: "68%",
-    height: "25px",
-    borderRadius: "3px",
+    top: "58%",
+    height: "40px",
     WebkitAnimation: "Floatingy 15s ease-in-out infinite",
   },
 });

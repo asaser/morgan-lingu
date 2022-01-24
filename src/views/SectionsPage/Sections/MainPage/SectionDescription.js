@@ -26,14 +26,15 @@ import CardFooter from "components/Card/CardFooter";
 
 import projectsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle.js";
 
-import office2 from "assets/img/examples/office2.jpg";
-import cardBlog3 from "assets/img/examples/card-blog3.jpg";
 import cardProject1 from "assets/img/examples/card-project1.jpg";
 import cardProject2 from "assets/img/examples/card-project2.jpg";
-import cardProject3 from "assets/img/examples/card-project3.jpg";
-import cardProject4 from "assets/img/examples/card-project4.jpg";
-import cardProject5 from "assets/img/examples/card-project5.jpg";
-import cardProject6 from "assets/img/examples/card-project6.jpg";
+
+import bigFlagNorway from "assets/img/BigFlags/bigFlagNorway.jpg";
+import bigFlagRussia from "assets/img/BigFlags/bigFlagRussia.jpg";
+import bigFlagGerman from "assets/img/BigFlags/bigFlagGerman.jpg";
+import bigFlagEngland from "assets/img/BigFlags/bigFlagEngland.jpg";
+import bigFlagPoland from "assets/img/BigFlags/bigFlagPoland.jpg";
+
 
 const useStyles = makeStyles(projectsStyle);
 
@@ -65,19 +66,24 @@ export default function SectionProjects({ ...rest }) {
                 background
               >
                 <a
-                  href="/english"
+                  href="/russian"
                   target="_blank"
                 >
                   <CardBody background style={{ 
-                    backgroundImage: `url(${cardProject1})`,
+                    backgroundImage: `url(${bigFlagRussia})`,
                     opacity: '0.7',
-                    backgroundSize: '100%',
+                    width: "auto",
+                    backgroundSize: 'cover',
+                    backgroundPosition: '50% 50%',
                   }}>
-                    <h3 className={classes.cardTitleWhite} style={{
-                      marginBottom: '20%'
+                    <h3 style={{
+                      marginBottom: '20%',
+                      fontWeight: 'bold',
+                      fontSize: '30px',
+                      marginTop: '25px'
                     }}>
-                        Angielski
-                      </h3>
+                      Rosyjski
+                    </h3>
                     <Button round color="danger">
                       <Icon>content_copy</Icon> Otwórz język
                     </Button>
@@ -91,18 +97,24 @@ export default function SectionProjects({ ...rest }) {
                 background
               >
                 <a
-                  href="/german"
+                  href="/polish"
                   target="_blank"
                 >
                   <CardBody background style={{ 
-                    backgroundImage: `url(${cardProject1})`,
+                    backgroundImage: `url(${bigFlagPoland})`,
                     opacity: '0.7',
-                    backgroundSize: '100%',
+                    width: "100%",
+                    height: "auto",
+                    backgroundSize: 'cover',
+                    backgroundPosition: '50% 50%',
                   }}>
-                    <h3 className={classes.cardTitleWhite} style={{
-                      marginBottom: '20%'
+                    <h3 style={{
+                      marginBottom: '20%',
+                      fontWeight: 'bold',
+                      fontSize: '30px',
+                      marginTop: '25px'
                     }}>
-                      Niemiecki
+                      Polski
                     </h3>
                     <Button round color="danger">
                       <Icon>content_copy</Icon> Otwórz język
@@ -121,12 +133,18 @@ export default function SectionProjects({ ...rest }) {
                   target="_blank"
                 >
                   <CardBody background style={{ 
-                    backgroundImage: `url(${cardProject1})`,
+                    backgroundImage: `url(${bigFlagNorway})`,
                     opacity: '0.7',
-                    backgroundSize: '100%',
+                    width: "100%",
+                    height: "auto",
+                    backgroundSize: 'cover',
+                    backgroundPosition: '50% 50%',
                   }}>
                     <h3 className={classes.cardTitleWhite} style={{
-                      marginBottom: '20%'
+                      marginBottom: '20%',
+                      fontWeight: 'bold',
+                      fontSize: '30px',
+                      marginTop: '25px'
                     }}>
                       Norweski
                     </h3>
@@ -143,18 +161,24 @@ export default function SectionProjects({ ...rest }) {
                 background
               >
                 <a
-                  href="/russian"
+                  href="/english"
                   target="_blank"
                 >
                   <CardBody background style={{ 
-                    backgroundImage: `url(${cardProject2})`,
+                    backgroundImage: `url(${bigFlagEngland})`,
                     opacity: '0.7',
-                    backgroundSize: '100%',
+                    width: "100%",
+                    height: "auto",
+                    backgroundSize: 'cover',
+                    backgroundPosition: '50% 50%',
                   }}>
                     <h3 className={classes.cardTitleWhite} style={{
-                      marginBottom: '20%'
+                      marginBottom: '20%',
+                      fontWeight: 'bold',
+                      fontSize: '30px',
+                      marginTop: '25px'
                     }}>
-                      Rosyjski
+                        Angielski
                     </h3>
                     <Button round color="danger">
                       <Icon>content_copy</Icon> Otwórz język
@@ -169,18 +193,24 @@ export default function SectionProjects({ ...rest }) {
                 background
               >
                 <a
-                  href="/russian"
+                  href="/german"
                   target="_blank"
                 >
                   <CardBody background style={{ 
-                    backgroundImage: `url(${cardProject2})`,
+                    backgroundImage: `url(${bigFlagGerman})`,
                     opacity: '0.7',
-                    backgroundSize: '100%',
+                    width: "100%",
+                    height: "auto",
+                    backgroundSize: 'cover',
+                    backgroundPosition: '50% 50%',
                   }}>
                     <h3 className={classes.cardTitleWhite} style={{
-                      marginBottom: '20%'
+                      marginBottom: '20%',
+                      fontWeight: 'bold',
+                      fontSize: '30px',
+                      marginTop: '25px'
                     }}>
-                      Polski
+                      Niemiecki
                     </h3>
                     <Button round color="danger">
                       <Icon>content_copy</Icon> Otwórz język
