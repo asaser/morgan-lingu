@@ -192,7 +192,7 @@ function ContactPage() {
 
               <GridItem md={4} sm={4} className={classes.mlAuto}>
 
-                <Card style={{height: '70%', width: '400px', backgroundColor: 'rgba(240, 240, 240, 1)', boxShadow: '0 10px 10px 0 rgba(0,0,0,0.2)'}}>
+                <Card style={{paddingBottom: '20px', marginLeft: '50px', height: 'auto', width: '400px', backgroundColor: 'rgba(240, 240, 240, 1)', boxShadow: '0 10px 10px 0 rgba(0,0,0,0.2)'}}>
 
                   <h2 className={classes.title} style={{display: 'flex', justifyContent: 'center'}}>Kontakt</h2>
 

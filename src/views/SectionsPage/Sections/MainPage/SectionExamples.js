@@ -66,15 +66,24 @@ export default function SectionProjects({ ...rest }) {
                 background
                 style={{ backgroundImage: `url(${office2})` }}
               >
+                <a 
+                  href="/build-page"
+                  target="_blank"
+                >
                 <CardBody background>
-                  <h6 className={classes.cardCategory}>SŁÓWKA</h6>
-                  <h3 className={classes.cardTitleWhite}>
-                    Słówka Angielskie
-                  </h3>
-                  <Button round color="danger">
-                    <Icon>content_copy</Icon> Naucz się
-                  </Button>
+
+                    <h6 className={classes.cardCategory}>SŁÓWKA</h6>
+                    <h3 className={classes.cardTitleWhite}>
+                      Słówka Angielskie
+                    </h3>
+                    <Button round color="danger">
+                      <Icon>content_copy</Icon> Naucz się
+                    </Button>
+                    
                 </CardBody>
+
+                </a>
+
               </Card>
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>
@@ -83,6 +92,10 @@ export default function SectionProjects({ ...rest }) {
                 background
                 style={{ backgroundImage: `url(${office2})` }}
               >
+                <a 
+                  href="/build-page"
+                  target="_blank"
+                >
                 <CardBody background>
                   <h6 className={classes.cardCategory}>SŁÓWKA</h6>
                   <h3 className={classes.cardTitleWhite}>
@@ -92,6 +105,7 @@ export default function SectionProjects({ ...rest }) {
                     <Icon>content_copy</Icon> Naucz się
                   </Button>
                 </CardBody>
+                </a>
               </Card>
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>
@@ -100,6 +114,10 @@ export default function SectionProjects({ ...rest }) {
                 background
                 style={{ backgroundImage: `url(${office2})` }}
               >
+                <a 
+                  href="/build-page"
+                  target="_blank"
+                >
                 <CardBody background>
                   <h6 className={classes.cardCategory}>SŁÓWKA</h6>
                   <h3 className={classes.cardTitleWhite}>
@@ -109,6 +127,7 @@ export default function SectionProjects({ ...rest }) {
                     <Icon>content_copy</Icon> Naucz się
                   </Button>
                 </CardBody>
+                </a>
               </Card>
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>
@@ -117,6 +136,10 @@ export default function SectionProjects({ ...rest }) {
                 background
                 style={{ backgroundImage: `url(${office2})` }}
               >
+                <a 
+                  href="/build-page"
+                  target="_blank"
+                >
                 <CardBody background>
                   <h6 className={classes.cardCategory}>SŁÓWKA</h6>
                   <h3 className={classes.cardTitleWhite}>
@@ -126,6 +149,7 @@ export default function SectionProjects({ ...rest }) {
                     <Icon>content_copy</Icon> Naucz się
                   </Button>
                 </CardBody>
+                </a>
               </Card>
             </GridItem>
           </GridContainer>

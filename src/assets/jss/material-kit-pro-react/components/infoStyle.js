@@ -45,6 +45,7 @@ const infoStyle = {
     width: "2.25rem",
     height: "2.25rem",
     fontSize: "2.25rem",
+    color: 'rgba(0, 0, 184, 1)'
   },
   descriptionWrapper: {
     color: grayColor[0],
@@ -54,6 +55,7 @@ const infoStyle = {
     ...title,
     margin: "1.75rem 0 0.875rem !important",
     minHeight: "unset",
+    color: '#000'
   },
   description: {
     color: grayColor[0],

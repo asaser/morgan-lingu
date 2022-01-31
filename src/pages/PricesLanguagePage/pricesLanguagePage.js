@@ -86,8 +86,8 @@ function AboutPage() {
           <SectionPricesLanguageNorwegian />
           <hr style={{border: "2px solid #000"}} />
           <SectionPricesLanguageRussian />
-          <hr style={{border: "2px solid #000"}} />
-          <SectionPricesLanguageRussian />
+          {/* <hr style={{border: "2px solid #000"}} />
+          <SectionPricesLanguageRussian /> */}
           <hr style={{border: "2px solid #000"}} />
           <SectionPricesLanguagePolish />
         </div>

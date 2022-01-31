@@ -40,8 +40,18 @@ export default function SectionProjects({ ...rest }) {
   const classes = useStyles();
   return (
     <div className="cd-section" {...rest}>
-      <div className={classes.projects}>
+      <div>
         <div className={classes.container}>
+          <h2 style={{
+            display: 'flex', 
+            justifyContent: 'center', 
+            alignItems: 'center', 
+            color: '#3C4858',
+            fontWeight: '700'
+          }}>
+            Słówka Językowe
+          </h2>
+          
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <Card
@@ -49,6 +59,10 @@ export default function SectionProjects({ ...rest }) {
                 background
                 style={{ backgroundImage: `url(${office2})` }}
               >
+                <a 
+                  href="/build-page"
+                >
+
                 <CardBody background>
                   <h6 className={classes.cardCategory}>SŁÓWKA</h6>
                   <h3 className={classes.cardTitleWhite}>
@@ -58,6 +72,9 @@ export default function SectionProjects({ ...rest }) {
                     <Icon>content_copy</Icon> Otwórz
                   </Button>
                 </CardBody>
+
+                </a>
+
               </Card>
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>
@@ -66,6 +83,10 @@ export default function SectionProjects({ ...rest }) {
                 background
                 style={{ backgroundImage: `url(${office2})` }}
               >
+                <a 
+                  href="/build-page"
+                >
+
                 <CardBody background>
                   <h6 className={classes.cardCategory}>SŁÓWKA</h6>
                   <h3 className={classes.cardTitleWhite}>
@@ -75,6 +96,9 @@ export default function SectionProjects({ ...rest }) {
                     <Icon>content_copy</Icon> Otwórz
                   </Button>
                 </CardBody>
+                
+                </a>
+
               </Card>
             </GridItem>
           </GridContainer>

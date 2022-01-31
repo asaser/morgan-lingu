@@ -9,7 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import cardsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/cardsStyle.js";
 
-import cardsTest from "assets/img/picAdsMainPage.jpg";
+import cardsTest from "assets/img/saleInsideBg1.png";
 
 const useStyles = makeStyles(cardsStyle);
 
@@ -19,25 +19,39 @@ export default function SectionCards() {
     <div className={classNames(classes.section)}>
       <div className={classes.container}>
         <GridContainer justify="center">
-          <GridItem md={7} sm={7}>
+          <GridItem md={3} sm={12}>
             <div className={classes.imageContainer}>
               <img src={cardsTest} alt="views" />
             </div>
           </GridItem>
-          <GridItem md={4} sm={5}>
-            <div className={classes.sectionDescription}>
-              <h1>Okazja noworoczna</h1>
-              <h3>Kursy indywidualne ~</h3>
-              <h4><del>100 zł/h</del> || 70 zł/h</h4>
+          <GridItem md={7} sm={12} style={{overflowX:'auto'}}>
+            <h1 style={{textAlign: 'center', fontWeight: '500'}}><span style={{color: 'rgba(215, 83, 71, 1)'}}>PROMOCJA!!!</span></h1>
+
+            <h2 style={{textAlign: 'center', fontWeight: '500'}}>Wszystkie języki aż <span style={{
+              color: 'rgba(191, 23, 8, 1)',
+              fontSize: '50px',
+              fontWeight: 'bold'
+            }}>
+              -30%</span></h2>
+          
+            <div>
+              <div style={{display: 'flex'}}>
+                <h3 style={{fontWeight: '500'}}>ZAJĘCIA INDYWIDUALNE ~ </h3>
+                <h1 style={{marginLeft: '20px', color: 'rgba(86, 168, 31, 1)', fontWeight: 'bold'}}>70 <small style={{color: 'rgba(86, 168, 31, 1)'}}>zł/h</small></h1>
+              </div>
               <hr />
 
-              <h3>Kursy Grupowe ~</h3>
-              <h4>Zajęcia dla 2 osób</h4>
-              <h4><del>60 zł/h</del> || 45 zł/h</h4>
+              <div style={{display: 'flex'}}>
+                <h3 style={{fontWeight: '500'}}>ZAJĘCIA DLA 2 OSÓB ~</h3>
+                <h1 style={{marginLeft: '20px', color: 'rgba(86, 168, 31, 1)', fontWeight: 'bold'}}>45 <small style={{color: 'rgba(86, 168, 31, 1)'}}>zł/h</small></h1>
+              </div>
+  
               <hr />
 
-              <h3>Zajęcia grupowe ~</h3>
-              <h4><del>40 zł/h</del> || 30 zł/h</h4>
+              <div style={{display: 'flex'}}>
+                <h3 style={{fontWeight: '500'}}>ZAJĘCIA OD 3 OSÓB ~</h3>
+                <h1 style={{marginLeft: '20px', color: 'rgba(86, 168, 31, 1)', fontWeight: 'bold'}}>30 <small style={{color: 'rgba(86, 168, 31, 1)'}}>zł/h</small></h1>
+              </div>
             </div>
           </GridItem>
         </GridContainer>

@@ -95,19 +95,21 @@ function HowLearnPage({ ...rest }) {
               }}>Dlaczego&nbsp;<span style={{color: '#000080'}}>MorganLingu</span>?</h2>
 
               <div style={{color: "#000"}}>
-                <p style={{fontWeight: '400', fontSize: '1.5em', lineHeight: '140%'}}>
-                  U nas <span style={{color: "red", fontWeight: 'bold'}}>NIE</span> uczysz się tak jak w zwykłej szkole metodą 3Z <i>(Zakuj, Zdaj, Zapomnij)</i>,
-                  <span style={{color: "red", fontWeight: 'bold'}}> NIE</span> będziesz mieć nudnych lekcji polegających tylko na czytaniu z podręcznika.
-                </p>
 
-                <hr />
-
-                <p style={{fontWeight: '400', fontSize: '1.45em', lineHeight: '140%'}}>
-                  W <span style={{fontWeight: 'bold'}}>MorganLingu</span> stawiamy na różnorodność form nauki, w taki sposób, 
-                  w jaki stykałbyś się z nimi podczas <span style={{color: "#000080", fontWeight: 'bold'}}>życia codziennego</span> 
+              <p style={{fontWeight: '400', fontSize: '1.45em', lineHeight: '140%'}}>
+                  My w <span style={{fontWeight: 'bold'}}>MorganLingu</span> stawiamy na różnorodność form nauki, w taki sposób, 
+                  w jaki stykałbyś się z nimi podczas <span style={{color: "#000080", fontWeight: 'bold'}}>życia codziennego </span> 
                   oraz <span style={{color: "#000080", fontWeight: 'bold'}}>zawodowego</span> żyjąc w danym kraju. Nasze metody nauki 
                   dostosowane są do każdego, niezależnie od wieku oraz doświadczenia językowego.
-                </p>
+              </p>
+
+              <hr />
+
+              <p style={{fontWeight: '400', fontSize: '1.5em', lineHeight: '140%'}}>
+                  Dlatego u nas <span style={{color: "red", fontWeight: 'bold'}}>NIE</span> uczysz się tak jak w zwykłej szkole metodą 3Z <i>(Zakuj, Zdaj, Zapomnij)</i>,
+                  <span style={{color: "red", fontWeight: 'bold'}}> NIE</span> będziesz mieć nudnych lekcji polegających tylko na czytaniu z podręcznika.
+              </p>
+
               </div>
             </GridItem>
           </GridContainer>

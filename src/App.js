@@ -38,6 +38,7 @@ import SwedishPricePage from "./pages/PricesPage/SwedishPricePage/swedishPricePa
 import PolishPricePage from "./pages/PricesPage/PolishPricePage/polishPricePage.js";
 
 import PricesLanguagePage from "./pages/PricesLanguagePage/pricesLanguagePage.js";
+import BuildPage from "./pages/BuildPage/buildPage.js";
 
 import JobOfferPage from "./pages/JobOfferPage/jobOfferPage";
 import ContactPage from "./pages/ContactPage/contactPage";
@@ -64,6 +65,8 @@ const App = () => {
                 <Route path="/swedish" component={SwedishPricePage} />
                 <Route path="/russian" component={RussianPricePage} />
                 <Route path="/polish" component={PolishPricePage} />
+
+                <Route path="/build-page" component={BuildPage} />
 
 
                 <Route path="/job-offer-page" component={JobOfferPage} />

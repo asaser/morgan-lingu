@@ -40,7 +40,7 @@ export default function SectionProjects({ ...rest }) {
   const classes = useStyles();
   return (
     <div className="cd-section" {...rest}>
-      <div className={classes.projects + " " + classes.projects4}>
+      <div className={classes.projects}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>

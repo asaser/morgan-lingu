@@ -16,7 +16,7 @@ import {
   hexToRgb,
 } from "assets/jss/material-kit-pro-react.js";
 
-import logo from "assets/img/icons/iconMorganLingu64White.png";
+import logo from "assets/img/icons/iconHeaderMorganLingu64White.png";
 
 
 const headerStyle = (theme) => ({
@@ -62,7 +62,7 @@ const headerStyle = (theme) => ({
       ...defaultFont,
       minWidth: "unset",
       lineHeight: "30px",
-      fontSize: "20px",
+      fontSize: "30px",
       fontWeight: 'bold',
       borderRadius: "3px",
       textTransform: "none",

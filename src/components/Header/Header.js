@@ -18,6 +18,8 @@ import Close from "@material-ui/icons/Close";
 // core components
 import styles from "assets/jss/material-kit-pro-react/components/headerStyle.js";
 
+import logo from "assets/img/icons/iconMorganLingu64White.png";
+
 const useStyles = makeStyles(styles);
 
 

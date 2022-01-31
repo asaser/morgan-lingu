@@ -4,17 +4,12 @@ import classNames from "classnames";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
+// import Button from "components/CustomButtons/Button.js";
+import Button from "@material-ui/core/Button";
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui icons
-import Mail from "@material-ui/icons/Mail";
-
-import bg7 from "assets/img/bg7.jpg";
 
 import styles from "assets/jss/material-kit-pro-react/views/componentsSections/preFooter.js";
 
@@ -29,12 +24,12 @@ export default function SectionPreFooter() {
           classes.textCenter,
         )}
       >
-        <div className={classes.container}>
+        <div className={classes.container} style={{backgroundColor: 'rgba(133, 133, 133, 0.45)'}}>
 
-        <hr style={{ border: '2px solid #000', margin: '20px 50px 0px 50px' }} />
+        <hr style={{ border: '2px solid #000', margin: '20px 0px 0px 0px' }} />
           <GridContainer justify="center">
             <GridItem md={12}>
-              <h4 className={classes.title}>Naciśnij aby skontaktować się z nami</h4>
+              <h2 className={classes.title}>Naciśnij aby skontaktować się z nami</h2>
             </GridItem>
 
             <div>
@@ -42,11 +37,11 @@ export default function SectionPreFooter() {
                 href="/contact-page"
                 target="_blank"
               >
-              <Button variant="outlined">Kontakt</Button>
+              <Button variant="contained" size="large" style={{ backgroundColor: '#4caf50', color: '#fff'}}>Kontakt</Button>
               </a>
             </div>
           </GridContainer>
-        <hr style={{ border: '2px solid #000', margin: '20px 50px 20px 50px' }} />
+        <hr style={{ border: '2px solid #000', margin: '20px 0px 0px 0px' }} />
 
         </div>
       </div>

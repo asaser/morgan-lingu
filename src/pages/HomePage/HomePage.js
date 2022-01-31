@@ -49,7 +49,7 @@ export default function PresentationPage() {
       <Header
         // color="transparent"
         brand="MorganLingu"
-        links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
+        links={<HeaderLinksMorganLingu/>}
         fixed
         color="dark"
         // changeColorOnScroll={{
@@ -67,7 +67,7 @@ export default function PresentationPage() {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1>
+                <h1 style={{fontSize: '80px'}}>
                   MorganLingu
                   <span style={{
                     backgroundColor: '#fff',
@@ -79,7 +79,7 @@ export default function PresentationPage() {
                     <img src={logo} alt="Logo" />
                   </span>
                 </h1>
-                <h3 className={classes.title}>
+                <h3 style={{fontWeight: '700', fontSize: '35px'}}>
                   Szkoła językowa
                 </h3>
               </div>

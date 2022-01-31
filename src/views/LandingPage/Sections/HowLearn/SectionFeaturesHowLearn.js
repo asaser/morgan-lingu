@@ -2,12 +2,6 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Code from "@material-ui/icons/Code";
-import FormatPaint from "@material-ui/icons/FormatPaint";
-import Dashboard from "@material-ui/icons/Dashboard";
-import ViewCarousel from "@material-ui/icons/ViewCarousel";
-import AccessTime from "@material-ui/icons/AccessTime";
-import AttachMoney from "@material-ui/icons/AttachMoney";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver';
 import HeadsetIcon from '@material-ui/icons/Headset';
