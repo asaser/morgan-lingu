@@ -1,0 +1,37 @@
+.css-typing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-typing p {
+    font-family: "Courier";
+    white-space: nowrap;
+    overflow: hidden;
+    width: 15em;
+    animation: 
+        type 4s steps(40, end),
+        blink 1s step-end infinite;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes type {
+      0% {
+          width: 0;
+      }
+      1% {
+          border-right: .15em solid rgb(0, 0, 0);
+      }
+      100% {
+          border-right: .15em solid rgb(0, 0, 0);
+      }
+  }
+  
+  @keyframes blink {
+    0% {
+        border-color: transparent; 
+    }
+    50% { 
+        border-color: rgb(0, 0, 0); 
+    }
+  }

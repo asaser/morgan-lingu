@@ -42,13 +42,27 @@ export default function SectionPricing({ ...rest }) {
           <GridItem xs={12} sm={6} md={6} lg={4}>
               <Card pricing color="rose">
                 <CardBody pricing>
-                  <h5 style={{fontWeight: 'bold'}} className={classes.marginBottom30}>ZAJĘCIA INDYWIDUALNE</h5>
-                  <h1 className={classes.cardTitleWhite}>
+                  <h4 style={{fontWeight: 'bold'}} className={classes.marginBottom30}>ZAJĘCIA INDYWIDUALNE</h4>
+                  <h4 style={{fontWeight: 'bold'}} className={classes.marginBottom30}>Oferujemy pakiet semestralny</h4>
+
+                  <h1 style={{marginTop: '-20px'}} className={classes.cardTitleWhite}>
                     70 <small>zł/h</small>
                   </h1>
                   <ul>
                     <li>
                       <Check /> ONLINE
+                    </li>
+                    <li>
+                      <Check /> Zajęcia 2 razy w tygodniu
+                    </li>
+                    <li>
+                      <Check /> Płatność raz w miesiącu
+                    </li>
+                    <li>
+                      <Check /> Możliwość rezygnacji w każdej chwili
+                    </li>
+                    <li>
+                      <Check /> Stałe godziny zajęć
                     </li>
                   </ul>
                 </CardBody>
@@ -58,12 +72,26 @@ export default function SectionPricing({ ...rest }) {
               <Card pricing color="success">
                 <CardBody pricing>
                   <h5 style={{fontWeight: 'bold'}} className={classes.marginBottom30}>ZAJĘCIA DLA 2 OSÓB</h5>
-                  <h1 className={classes.cardTitleWhite}>
+                  <h4 style={{fontWeight: 'bold'}} className={classes.marginBottom30}>Oferujemy pakiet semestralny</h4>
+
+                  <h1 style={{marginTop: '-20px'}} className={classes.cardTitleWhite}>
                     45 <small>zł/h</small>
                   </h1>
                   <ul>
                     <li>
                       <Check /> ONLINE
+                    </li>
+                    <li>
+                      <Check /> Zajęcia 2 razy w tygodniu
+                    </li>
+                    <li>
+                      <Check /> Płatność raz w miesiącu
+                    </li>
+                    <li>
+                      <Check /> Możliwość rezygnacji w każdej chwili
+                    </li>
+                    <li>
+                      <Check /> Stałe godziny zajęć
                     </li>
                   </ul>
                 </CardBody>
@@ -73,12 +101,26 @@ export default function SectionPricing({ ...rest }) {
               <Card pricing color="primary">
                 <CardBody pricing>
                   <h5 style={{fontWeight: 'bold'}} className={classes.marginBottom30}>ZAJĘCIA OD 3 OSÓB</h5>
-                  <h1 className={classes.cardTitleWhite}>
+                  <h4 style={{fontWeight: 'bold'}} className={classes.marginBottom30}>Oferujemy pakiet semestralny</h4>
+
+                  <h1 style={{marginTop: '-20px'}} className={classes.cardTitleWhite}>
                     30 <small>zł/h</small>
                   </h1>
                   <ul>
                     <li>
                       <Check /> ONLINE
+                    </li>
+                    <li>
+                      <Check /> Zajęcia 2 razy w tygodniu
+                    </li>
+                    <li>
+                      <Check /> Płatność raz w miesiącu
+                    </li>
+                    <li>
+                      <Check /> Możliwość rezygnacji w każdej chwili
+                    </li>
+                    <li>
+                      <Check /> Stałe godziny zajęć
                     </li>
                   </ul>
                 </CardBody>
