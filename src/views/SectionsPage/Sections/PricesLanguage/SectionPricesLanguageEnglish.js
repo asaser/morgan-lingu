@@ -46,7 +46,7 @@ export default function SectionPricing({ ...rest }) {
                   <h4 style={{fontWeight: 'bold'}} className={classes.marginBottom30}>Oferujemy pakiet semestralny</h4>
 
                   <h1 style={{marginTop: '-20px'}} className={classes.cardTitleWhite}>
-                    70 <small>zł/h</small>
+                    80 <small>zł/h</small>
                   </h1>
                   <ul>
                     <li>
