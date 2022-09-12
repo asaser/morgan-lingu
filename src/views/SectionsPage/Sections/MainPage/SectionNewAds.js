@@ -58,7 +58,7 @@ export default function SectionCards() {
                           fontSize: '30px',
                           fontWeight: 'bold'
                       }}>
-                      -30%
+                       -30%
                       </span>
                   </p>
                 </div>
