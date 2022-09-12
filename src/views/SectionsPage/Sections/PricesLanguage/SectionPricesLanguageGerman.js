@@ -46,7 +46,7 @@ export default function SectionPricing({ ...rest }) {
                   <h4 style={{fontWeight: 'bold'}} className={classes.marginBottom30}>Oferujemy pakiet semestralny</h4>
 
                   <h1 style={{marginTop: '-20px'}} className={classes.cardTitleWhite}>
-                    70 <small>zł/h</small>
+                    90 <small>zł/h</small>
                   </h1>
                   <ul>
                     <li>
@@ -56,10 +56,7 @@ export default function SectionPricing({ ...rest }) {
                       <Check /> Zajęcia 2 razy w tygodniu
                     </li>
                     <li>
-                      <Check /> Płatność raz w miesiącu
-                    </li>
-                    <li>
-                      <Check /> Możliwość rezygnacji w każdej chwili
+                      <Check /> Płatność za cały kurs lub w 2 ratach
                     </li>
                     <li>
                       <Check /> Stałe godziny zajęć
@@ -85,10 +82,7 @@ export default function SectionPricing({ ...rest }) {
                       <Check /> Zajęcia 2 razy w tygodniu
                     </li>
                     <li>
-                      <Check /> Płatność raz w miesiącu
-                    </li>
-                    <li>
-                      <Check /> Możliwość rezygnacji w każdej chwili
+                      <Check /> Płatność za cały kurs lub w 2 ratach
                     </li>
                     <li>
                       <Check /> Stałe godziny zajęć
@@ -114,10 +108,7 @@ export default function SectionPricing({ ...rest }) {
                       <Check /> Zajęcia 2 razy w tygodniu
                     </li>
                     <li>
-                      <Check /> Płatność raz w miesiącu
-                    </li>
-                    <li>
-                      <Check /> Możliwość rezygnacji w każdej chwili
+                      <Check /> Płatność za cały kurs lub w 2 ratach
                     </li>
                     <li>
                       <Check /> Stałe godziny zajęć
