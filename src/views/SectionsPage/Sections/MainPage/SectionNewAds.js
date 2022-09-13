@@ -124,7 +124,7 @@ export default function SectionCards() {
                     <h4 className={classes.cardTitle} style={{fontWeight: 'bold'}}>ZAJĘCIA OD 3 OSÓB</h4>
                     <Muted>
                       <p style={{color: 'rgba(86, 168, 31, 1)', fontWeight: 'bold', fontSize: '3em', marginTop: '10px'}} className={classes.cardCategory}>
-                      30 <small style={{color: 'rgba(86, 168, 31, 1)'}}>zł/h</small>
+                       30 <small style={{color: 'rgba(86, 168, 31, 1)'}}>zł/h</small>
                       </p>
                     </Muted>
                     <p style={{fontSize: '.85em', marginTop: '15px'}}>
