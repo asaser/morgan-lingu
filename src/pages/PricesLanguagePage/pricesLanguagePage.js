@@ -5,20 +5,13 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Grid from '@material-ui/core/Grid';
 
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
-import Footer from "components/Footer/Footer.js";
-import PinDrop from "@material-ui/icons/PinDrop";
-import FacebookIcon from '@material-ui/icons/Facebook';
 // sections for this page
 import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
 
@@ -42,16 +35,10 @@ function AboutPage() {
   return (
     <div>
       <Header
-        // color="transparent"
         brand="MorganLingu"
         links={<HeaderLinksMorganLingu dropdownHoverColor="info" />}
         fixed
         color="dark"
-        // changeColorOnScroll={{
-        //   height: 300,
-        //   color: "info",
-        // }}
-        // {...rest}
       />
       <Parallax
         image={require("assets/img/bgPrice.jpg").default}
@@ -86,8 +73,6 @@ function AboutPage() {
           <SectionPricesLanguageNorwegian />
           <hr style={{border: "2px solid #000"}} />
           <SectionPricesLanguageRussian />
-          {/* <hr style={{border: "2px solid #000"}} />
-          <SectionPricesLanguageRussian /> */}
           <hr style={{border: "2px solid #000"}} />
           <SectionPricesLanguagePolish />
         </div>

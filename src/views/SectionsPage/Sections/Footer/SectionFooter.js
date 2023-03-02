@@ -2,36 +2,16 @@
 /*eslint-disable*/
 import React from "react";
 // nodejs library that concatenates classes
-import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
 import Grid from '@material-ui/core/Grid';
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-import PinDrop from "@material-ui/icons/PinDrop";
-import Phone from "@material-ui/icons/Phone";
-import EmailIcon from '@material-ui/icons/Email';
-import LanguageIcon from '@material-ui/icons/Language';
-import BusinessCenter from "@material-ui/icons/BusinessCenter";
 import FacebookIcon from '@material-ui/icons/Facebook';
-import ShareIcon from '@material-ui/icons/Share';
-
 
 // core components
-import Header from "components/Header/Header.js";
-import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import InfoArea from "components/InfoArea/InfoArea.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
 import Footer from "components/Footer/Footer.js";
-import Parallax from "components/Parallax/Parallax.js";
-
 
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.js";
-import { Button } from "@material-ui/core";
 
 
 const useStyles = makeStyles(contactUsStyle);

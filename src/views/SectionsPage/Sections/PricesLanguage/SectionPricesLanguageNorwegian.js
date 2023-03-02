@@ -8,7 +8,6 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
-import Success from "components/Typography/Success.js";
 
 import pricingStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/pricingStyle.js";
 
@@ -31,11 +30,6 @@ export default function SectionPricing({ ...rest }) {
               }
             >
               <h2 className={classes.title}>Język Norweski</h2>
-              {/* <h5 className={classes.description}>
-                You have Free Unlimited Updates and Premium Support on each
-                package.
-              </h5> */}
-              {/* <div className={classes.sectionSpace} /> */}
             </GridItem>
           </GridContainer>
           <GridContainer>

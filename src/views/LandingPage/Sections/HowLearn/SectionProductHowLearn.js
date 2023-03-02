@@ -68,7 +68,6 @@ export default function SectionFeatures({ ...rest }) {
             </GridItem>
           </GridContainer>
         </div>
-        {/* Feature 3 END */}
       </div>
     </div>
   );
