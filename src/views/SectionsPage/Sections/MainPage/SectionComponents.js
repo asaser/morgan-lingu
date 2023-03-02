@@ -8,13 +8,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import componentsStyle from "assets/jss/material-kit-pro-react/views/presentationSections/componentsStyle.js";
 
 import websiteScreenShoot from "assets/img/websiteScreenShoot.png";
-// import macbookImage from "assets/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png";
-import shoppingCartImage from "assets/img/assets-for-demo/presentationViewSectionComponent/table.jpg";
-import shareButtonImage from "assets/img/assets-for-demo/presentationViewSectionComponent/share-btn.jpg";
-import cardImage from "assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg";
-import twitterImage from "assets/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg";
-import iconsImage from "assets/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg";
-// import repostImage from "assets/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg";
 
 import FlagNorwegian from "assets/img/FlagsLanguage/FlagNorwegian.png";
 import FlagRussia from "assets/img/FlagsLanguage/FlagRussia.png";
@@ -56,21 +49,6 @@ export default function SectionComponents() {
                 alt="MorganLingu"
                 className={classes.componentsMacbook}
               />
-              {/* <img
-                src={FlagRussia}
-                alt="MorganLingu"
-                className={classes.shoppingCart}
-              /> */}
-              {/* <img
-                src={FlagPoland}
-                alt="MorganLingu"
-                className={classes.shareButton}
-              /> */}
-              {/* <img
-                src={cardImage}
-                alt="MorganLingu"
-                className={classes.cardImage}
-              /> */}
               <img
                 src={FlagRussia}
                 alt="MorganLingu"

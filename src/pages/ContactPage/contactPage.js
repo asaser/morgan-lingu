@@ -16,16 +16,11 @@ import SnackbarContent from "components/Snackbar/SnackbarContent.js";
 
 
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
 import EmailIcon from '@material-ui/icons/Email';
 import Check from "@material-ui/icons/Check";
 
-import LanguageIcon from '@material-ui/icons/Language';
-import BusinessCenter from "@material-ui/icons/BusinessCenter";
 import FacebookIcon from '@material-ui/icons/Facebook';
-import ShareIcon from '@material-ui/icons/Share';
 
 
 // core components
@@ -34,8 +29,6 @@ import HeaderLinksMorganLingu from "components/Header/HeaderLinksMorganLingu.js"
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
-import Footer from "components/Footer/Footer.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import SectionFooter from "views/SectionsPage/Sections/Footer/SectionFooter.js";
@@ -76,7 +69,6 @@ function ContactPage() {
 
 
   // success alert
-
     const renderAlert = () => (
       <SnackbarContent
           message={
@@ -103,7 +95,6 @@ function ContactPage() {
 
       <Parallax
         image={require("assets/img/bg13.jpg").default}
-        // filter="dark"
         small
       >
         <div className={classes.container}>
