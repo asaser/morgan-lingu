@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/morgan-lingu-website/static/css/main.8f8b9dea.chunk.css",
+    "main.js": "/morgan-lingu-website/static/js/main.cc99ec60.chunk.js",
+    "main.js.map": "/morgan-lingu-website/static/js/main.cc99ec60.chunk.js.map",
+    "runtime-main.js": "/morgan-lingu-website/static/js/runtime-main.f01c1373.js",
+    "runtime-main.js.map": "/morgan-lingu-website/static/js/runtime-main.f01c1373.js.map",
+    "static/js/2.b552a76e.chunk.js": "/morgan-lingu-website/static/js/2.b552a76e.chunk.js",
+    "static/js/2.b552a76e.chunk.js.map": "/morgan-lingu-website/static/js/2.b552a76e.chunk.js.map",
+    "index.html": "/morgan-lingu-website/index.html",
+    "static/css/main.8f8b9dea.chunk.css.map": "/morgan-lingu-website/static/css/main.8f8b9dea.chunk.css.map",
+    "static/js/2.b552a76e.chunk.js.LICENSE.txt": "/morgan-lingu-website/static/js/2.b552a76e.chunk.js.LICENSE.txt",
+    "static/media/bg13.jpg": "/morgan-lingu-website/static/media/bg13.27a5c3f4.jpg",
+    "static/media/bgAboutUs.jpg": "/morgan-lingu-website/static/media/bgAboutUs.f2cab15a.jpg",
+    "static/media/bgBuildPage.24bfcf1c.png": "/morgan-lingu-website/static/media/bgBuildPage.24bfcf1c.png",
+    "static/media/bgHowLearn.jpg": "/morgan-lingu-website/static/media/bgHowLearn.d1d1f014.jpg",
+    "static/media/bgLanguageEngland.jpg": "/morgan-lingu-website/static/media/bgLanguageEngland.947a5554.jpg",
+    "static/media/bgLanguageGermany.jpg": "/morgan-lingu-website/static/media/bgLanguageGermany.b3d4411a.jpg",
+    "static/media/bgLanguageNorwegian.jpg": "/morgan-lingu-website/static/media/bgLanguageNorwegian.3b8dff0b.jpg",
+    "static/media/bgLanguagePolish.jpg": "/morgan-lingu-website/static/media/bgLanguagePolish.f9e0254d.jpg",
+    "static/media/bgLanguageRussian.jpg": "/morgan-lingu-website/static/media/bgLanguageRussian.9f43424c.jpg",
+    "static/media/bgMainPage.jpg": "/morgan-lingu-website/static/media/bgMainPage.ac3c23fa.jpg",
+    "static/media/bgPrice.jpg": "/morgan-lingu-website/static/media/bgPrice.b4d4a8ac.jpg",
+    "static/media/bigFlagEngland.d6bb766b.jpg": "/morgan-lingu-website/static/media/bigFlagEngland.d6bb766b.jpg",
+    "static/media/bigFlagGerman.4db3ea69.jpg": "/morgan-lingu-website/static/media/bigFlagGerman.4db3ea69.jpg",
+    "static/media/bigFlagNorway.3a64ebe6.jpg": "/morgan-lingu-website/static/media/bigFlagNorway.3a64ebe6.jpg",
+    "static/media/bigFlagPoland.063b1d80.jpg": "/morgan-lingu-website/static/media/bigFlagPoland.063b1d80.jpg",
+    "static/media/bigFlagRussia.5a585ead.jpg": "/morgan-lingu-website/static/media/bigFlagRussia.5a585ead.jpg",
+    "static/media/card-project2.849cb7fc.jpg": "/morgan-lingu-website/static/media/card-project2.849cb7fc.jpg",
+    "static/media/lectorBartek.05d97f26.jpg": "/morgan-lingu-website/static/media/lectorBartek.05d97f26.jpg",
+    "static/media/lectorMałgorzata.c588ca5e.jpg": "/morgan-lingu-website/static/media/lectorMałgorzata.c588ca5e.jpg",
+    "static/media/lectorZygmunt.56b53d20.jpg": "/morgan-lingu-website/static/media/lectorZygmunt.56b53d20.jpg",
+    "static/media/mobilePictureHowLearn.a33a6df1.png": "/morgan-lingu-website/static/media/mobilePictureHowLearn.a33a6df1.png",
+    "static/media/office2.2cce81e2.jpg": "/morgan-lingu-website/static/media/office2.2cce81e2.jpg",
+    "static/media/websiteScreenShoot.e8a58794.png": "/morgan-lingu-website/static/media/websiteScreenShoot.e8a58794.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f01c1373.js",
+    "static/js/2.b552a76e.chunk.js",
+    "static/css/main.8f8b9dea.chunk.css",
+    "static/js/main.cc99ec60.chunk.js"
+  ]
+}
