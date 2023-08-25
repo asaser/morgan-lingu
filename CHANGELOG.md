@@ -122,7 +122,7 @@ _Warnings might appear while doing an npm install - they do not affect the UI or
 ### Updated dependencies
 ```
 @material-ui/core         4.1.0   →    4.3.2
-@material-ui/icons        4.1.0   →    4.2.1
+@material-ui/icons        4.1.0   →    4.2.**1**
 nouislider               13.1.5   →   14.0.2
 react-image-gallery      0.8.17   →   0.8.18
 @types/googlemaps        3.36.4   →   3.37.0
